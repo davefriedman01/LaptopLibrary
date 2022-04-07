@@ -297,10 +297,18 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="command-line-toolkit">
 <h1>Command Line Toolkit<a class="headerlink" href="#command-line-toolkit" title="Permalink to this headline">¶</a></h1>
+<p>chsh</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://stedolan.github.io/jq/"><code class="docutils literal notranslate"><span class="pre">jq</span></code></a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code> (Windows) <code class="docutils literal notranslate"><span class="pre">open</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/zsh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/bash</span></code></p></li>
 </ul>
+<p>echo</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span> <span class="pre">|</span> <span class="pre">tr</span> <span class="pre">:</span> <span class="pre">'\n'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$SHELL</span></code> or <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$0</span></code></p></li>
+</ul>
+<p><a class="reference external" href="https://stedolan.github.io/jq/"><code class="docutils literal notranslate"><span class="pre">jq</span></code></a></p>
+<p><code class="docutils literal notranslate"><span class="pre">start</span></code> (Windows) <code class="docutils literal notranslate"><span class="pre">open</span></code> (macOS)</p>
 </div>
 
     <script type="text/x-thebe-config">
