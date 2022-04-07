@@ -330,6 +330,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>Files contain neither files nor folders.</p></li>
 </ul>
 </li>
+<li><p>If a directory x contains a directory y, then we say that x is y’s parent directory and y is x’s child directory.</p></li>
 <li><p>We are always in <em>some</em> directory in the filesystem. This directory is called the <strong>working directory</strong>.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> Print the working directory.</p></li>
@@ -339,6 +340,14 @@ const thebe_selector_output = ".output, .cell_output"
 <ul>
 <li><p>An <strong>absolute path</strong> (to some entity) is the path (to that entity) <em>relative to the root directory</em>.</p></li>
 <li><p>A <strong>relative path</strong> (to some entity) is the path (to that entity) <em>relative to the working directory</em>.</p></li>
+</ul>
+</li>
+<li><p>Abbreviations for common paths</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> The root directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> The home directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">..</span></code> The parent directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">.</span></code> The working directory.</p></li>
 </ul>
 </li>
 <li><p>cd “change directory”</p>
