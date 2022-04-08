@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Elastic Stack &#8212; Library</title>
+    <title>Git &amp; GitHub &#8212; Library</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="SSH" href="../ssh/ssh.html" />
-    <link rel="prev" title="Writing technical documentation" href="../documentation/documentation.html" />
+    <link rel="next" title="Shell" href="../shell/shell.html" />
+    <link rel="prev" title="Filesystem 101" href="../filesystem/filesystem.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -156,8 +156,8 @@ const thebe_selector_output = ".output, .cell_output"
      Filesystem 101
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../git/git.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Git &amp; GitHub
     </a>
    </li>
@@ -228,8 +228,8 @@ const thebe_selector_output = ".output, .cell_output"
      Writing technical documentation
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../elk/elk.html">
      Elastic Stack
     </a>
    </li>
@@ -296,7 +296,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/elk/elk.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/git/git.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -340,8 +340,23 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documentation">
-   Documentation
+  <a class="reference internal nav-link" href="#what-is-git">
+   What is git?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github">
+   GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-cli">
+   GitHub CLI
   </a>
  </li>
 </ul>
@@ -354,7 +369,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Elastic Stack</h1>
+                <h1>Git & GitHub</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -365,8 +380,23 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documentation">
-   Documentation
+  <a class="reference internal nav-link" href="#what-is-git">
+   What is git?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github">
+   GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github-cli">
+   GitHub CLI
   </a>
  </li>
 </ul>
@@ -378,44 +408,74 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="elastic-stack">
-<h1>Elastic Stack<a class="headerlink" href="#elastic-stack" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
+  <div class="tex2jax_ignore mathjax_ignore section" id="git-github">
+<h1>Git &amp; GitHub<a class="headerlink" href="#git-github" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-git">
+<h2>What is git?<a class="headerlink" href="#what-is-git" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/start">Getting Started</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/elastic-stack-get-started/current/get-started-elastic-stack.html">Getting Started with the Elastic Stack</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/index.html">Elastic Stack and Product Documentation</a></p></li>
+<li><p>Distributed Version Control <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_version_control">Wiki</a></p></li>
+<li><p>git <a class="reference external" href="https://en.wikipedia.org/wiki/Git">Wiki</a></p></li>
+<li><p>Version Control <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">Wiki</a></p></li>
 </ul>
-<p>Kibana</p>
+</div>
+<div class="section" id="git">
+<h2>git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/kibana">Docs</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/doc">Docs</a></p></li>
 </ul>
-<p>Logstash</p>
+</div>
+<div class="section" id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/logstash">Home</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/logstash">Docs</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/logstash/current/getting-started-with-logstash.html">Getting Started with Logstash</a></p></li>
+<li><p><a class="reference external" href="https://github.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/">Docs</a></p>
+<ul>
+<li><p>Get Started <a class="reference external" href="https://docs.github.com/en/get-started">Docs</a></p>
+<ul>
+<li><p>Quickstart <a class="reference external" href="https://docs.github.com/en/get-started/quickstart">Docs</a></p></li>
 </ul>
-<p>Beats</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/libbeat/current/index.html">Docs</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/libbeat/current/config-file-permissions.html">Config File Ownership and Permissions</a></p></li>
+</li>
+<li><p>Authentication <a class="reference external" href="https://docs.github.com/en/authentication">Docs</a></p></li>
+<li><p>Security <a class="reference external" href="https://docs.github.com/en/code-security">Docs</a></p></li>
 </ul>
-<p>Filebeat</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/filebeat/current/index.html">Docs</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-input-syslog.html">Syslog Input</a></p></li>
+</li>
 </ul>
-<p>Metricbeat</p>
+</div>
+<div class="section" id="github-cli">
+<h2>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/metricbeat">Docs</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-module-system.html">System Module</a></p></li>
+<li><p><a class="reference external" href="https://cli.github.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://cli.github.com/manual/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cli/cli">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cli/cli/issues">GitHub Issue Tracker</a></p></li>
 </ul>
-<p>Observability Guide</p>
+<p>gh</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/observability/8.1/index.html">Docs</a></p></li>
-<li><p><a class="reference external" href="https://www.elastic.co/guide/en/observability/8.1/analyze-metrics.html">Metrics Monitoring</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">--version</span></code> What is the gh version?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">auth</span> <span class="pre">login</span></code> Authenticate gh and git with GitHub.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">ssh-key</span> <span class="pre">list</span></code> Which SSH keys are registered with my GitHub account?</p></li>
+</ul>
+<p>gh browse</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">browse</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">browse</span></code>?</p></li>
+</ul>
+<p>gh repo</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span></code>?</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span> <span class="pre">list</span></code> Which repos do I own?</p></li>
+</ul>
+</li>
+</ul>
+<p>gh config</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span></code>?</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span> <span class="pre">list</span></code> Print a list of configuration keys and values.</p></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -433,7 +493,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./elk"
+            path: "./git"
         },
         predefinedOutput: true
     }
@@ -445,17 +505,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../documentation/documentation.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../filesystem/filesystem.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Writing technical documentation</p>
+            <p class="prev-next-title">Filesystem 101</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../ssh/ssh.html" title="next page">
+    <a class='right-next' id="next-link" href="../shell/shell.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">SSH</p>
+        <p class="prev-next-title">Shell</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
