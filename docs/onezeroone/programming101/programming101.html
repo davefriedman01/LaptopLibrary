@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Zsh &#8212; Library</title>
+    <title>Programming 101 &#8212; Library</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="VS Code" href="../../VSCode/vscode.html" />
-    <link rel="prev" title="PowerShell" href="../powershell/powershell.html" />
+    <link rel="next" title="Character Encoding" href="../../characterencoding/characterencoding.html" />
+    <link rel="prev" title="Filesystem 101" href="../filesystem101/filesystem101.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -151,28 +151,28 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../../onezeroone/onezeroone.html">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="../onezeroone.html">
      Computers 101
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
     <label for="toctree-checkbox-3">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
+    <ul class="current">
      <li class="toctree-l3">
-      <a class="reference internal" href="../../onezeroone/computing101/computing101.html">
+      <a class="reference internal" href="../computing101/computing101.html">
        Computing 101
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../../onezeroone/filesystem101/filesystem101.html">
+      <a class="reference internal" href="../filesystem101/filesystem101.html">
        Filesystem 101
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../../onezeroone/programming101/programming101.html">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Programming 101
       </a>
      </li>
@@ -188,28 +188,28 @@ const thebe_selector_output = ".output, .cell_output"
      Git &amp; GitHub
     </a>
    </li>
-   <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="../shell.html">
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../shell/shell.html">
      Shell
     </a>
-    <input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
     <label for="toctree-checkbox-4">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
+    <ul>
      <li class="toctree-l3">
-      <a class="reference internal" href="../bash/bash.html">
+      <a class="reference internal" href="../../shell/bash/bash.html">
        Bash
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../powershell/powershell.html">
+      <a class="reference internal" href="../../shell/powershell/powershell.html">
        PowerShell
       </a>
      </li>
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../shell/zsh/zsh.html">
        Zsh
       </a>
      </li>
@@ -323,7 +323,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/shell/zsh/zsh.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/onezeroone/programming101/programming101.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -361,6 +361,19 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -368,29 +381,52 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Zsh</h1>
+                <h1>Programming 101</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="zsh">
-<h1>Zsh<a class="headerlink" href="#zsh" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="programming-101">
+<h1>Programming 101<a class="headerlink" href="#programming-101" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.zsh.org">Home</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Z_shell">Wiki</a></p></li>
-<li><p>Oh My Zsh</p>
-<ul>
-<li><p><a class="reference external" href="https://ohmyz.sh">Home</a></p></li>
-<li><p><a class="reference external" href="https://github.com/ohmyzsh/ohmyzsh">GitHub</a></p></li>
+<li><p>Directory <a class="reference external" href="https://en.wikipedia.org/wiki/Directory_(computing)">Wiki</a></p></li>
+<li><p>Directory Structure <a class="reference external" href="https://en.wikipedia.org/wiki/Directory_structure">Wiki</a></p></li>
+<li><p>File <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_file">Wiki</a></p></li>
+<li><p>File Name <a class="reference external" href="https://en.wikipedia.org/wiki/Filename">Wiki</a></p></li>
+<li><p>File System <a class="reference external" href="https://en.wikipedia.org/wiki/File_system">Wiki</a></p></li>
+<li><p>Home Directory <a class="reference external" href="https://en.wikipedia.org/wiki/Home_directory">Wiki</a></p></li>
+<li><p>Line <a class="reference external" href="https://en.wikipedia.org/wiki/Line_(text_file)">Wiki</a></p></li>
+<li><p>Path <a class="reference external" href="https://en.wikipedia.org/wiki/Path_(computing)">Wiki</a></p></li>
+<li><p>Root Directory <a class="reference external" href="https://en.wikipedia.org/wiki/Root_directory">Wiki</a></p></li>
+<li><p>String <a class="reference external" href="https://en.wikipedia.org/wiki/String_(computer_science)">Wiki</a></p></li>
+<li><p>Superuser <a class="reference external" href="https://en.wikipedia.org/wiki/Superuser">Wiki</a></p></li>
+<li><p>Text File <a class="reference external" href="https://en.wikipedia.org/wiki/Text_file">Wiki</a></p></li>
+<li><p>User <a class="reference external" href="https://en.wikipedia.org/wiki/User_(computing)">Wiki</a></p></li>
+<li><p>UI User Interface <a class="reference external" href="https://en.wikipedia.org/wiki/User_interface">Wiki</a></p></li>
+<li><p>Working Directory <a class="reference external" href="https://en.wikipedia.org/wiki/Working_directory">Wiki</a></p></li>
 </ul>
-</li>
-</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -406,7 +442,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./shell/zsh"
+            path: "./onezeroone/programming101"
         },
         predefinedOutput: true
     }
@@ -418,17 +454,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../powershell/powershell.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../filesystem101/filesystem101.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">PowerShell</p>
+            <p class="prev-next-title">Filesystem 101</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../../VSCode/vscode.html" title="next page">
+    <a class='right-next' id="next-link" href="../../characterencoding/characterencoding.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">VS Code</p>
+        <p class="prev-next-title">Character Encoding</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
