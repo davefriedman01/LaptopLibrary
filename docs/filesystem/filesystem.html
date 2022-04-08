@@ -324,13 +324,13 @@ const thebe_selector_output = ".output, .cell_output"
 <h1>Filesystem 101<a class="headerlink" href="#filesystem-101" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
 <li><p>The filesystem is like an upside-down tree with the “root” directory at the top and “leaves” terminating “branches” of nested folders toward the bottom.</p></li>
-<li><p>The two primary filesystem entities that will be our focus are <strong>files</strong> and <strong>folders (directories)</strong>.</p>
+<li><p>The two most well-known filesystem entities are <strong>files</strong> and <strong>folders (directories)</strong>.</p>
 <ul>
 <li><p>Folders can contain both folders and files.</p></li>
 <li><p>Files contain neither files nor folders.</p></li>
 </ul>
 </li>
-<li><p>If a directory x contains a directory y, then we say that x is y’s parent directory and y is x’s child directory.</p></li>
+<li><p>If a directory x contains a directory y, then we say that x is y’s parent directory.</p></li>
 <li><p>We are always in <em>some</em> directory in the filesystem. This directory is called the <strong>working directory</strong>.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code> Print the working directory.</p></li>
@@ -342,7 +342,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>A <strong>relative path</strong> (to some entity) is the path (to that entity) <em>relative to the working directory</em>.</p></li>
 </ul>
 </li>
-<li><p>Abbreviations for common paths</p>
+<li><p>Abbreviations for common directories.</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">/</span></code> The root directory.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">~</span></code> The home directory.</p></li>
@@ -353,15 +353,16 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p>cd “change directory”</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code> Move to the home directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">~</span></code> Move to the home directory.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">-</span></code> Move to the previous directory.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">..</span></code> Move to the parent directory of the working directory.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cd</span> <span class="pre">.</span></code> Stay right where we are!</p></li>
 </ul>
 </li>
-<li><p>ls “list” the contents of some directory</p>
+<li><p>ls “list”</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">[-ailsF]</span></code> List the contents of the working directory (optionally, include these flags for additional information).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">x</span> <span class="pre">[-ailsF]</span></code> List the contents of directory x in the working directory (optionally, include these flags for additional information).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-ailsF</span></code> List the contents of the working directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span> <span class="pre">-ailsF</span> <span class="pre">the/relative/path/to/some/directory/x</span></code> List the contents of directory x.</p></li>
 </ul>
 </li>
 <li><p>One may benefit from working through <a class="reference external" href="https://linuxsurvival.com/">Linux Survival</a>.</p></li>
