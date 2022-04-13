@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Command Line Toolkit &#8212; Library</title>
+    <title>Packages &#8212; Library</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Platforms" href="../platforms/platforms.html" />
-    <link rel="prev" title="Packages" href="../python/packages.html" />
+    <link rel="next" title="Command Line Toolkit" href="../commandline/commandline.html" />
+    <link rel="prev" title="Jupyter" href="Jupyter/jupyter.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -235,45 +235,45 @@ const thebe_selector_output = ".output, .cell_output"
      VS Code
     </a>
    </li>
-   <li class="toctree-l2 has-children">
-    <a class="reference internal" href="../python/README.html">
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="README.html">
      Python Ecosystem
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
     <label for="toctree-checkbox-5">
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul>
+    <ul class="current">
      <li class="toctree-l3">
-      <a class="reference internal" href="../python/python.html">
+      <a class="reference internal" href="python.html">
        Python
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../python/Pip/pip.html">
+      <a class="reference internal" href="Pip/pip.html">
        Pip
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../python/Anaconda/conda.html">
+      <a class="reference internal" href="Anaconda/conda.html">
        Anaconda
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="../python/Jupyter/jupyter.html">
+      <a class="reference internal" href="Jupyter/jupyter.html">
        Jupyter
       </a>
      </li>
-     <li class="toctree-l3">
-      <a class="reference internal" href="../python/packages.html">
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
        Packages
       </a>
      </li>
     </ul>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../commandline/commandline.html">
      Command Line Toolkit
     </a>
    </li>
@@ -362,7 +362,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/commandline/commandline.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/python/packages.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -407,7 +407,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Command Line Toolkit</h1>
+                <h1>Packages</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -418,57 +418,41 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="command-line-toolkit">
-<h1>Command Line Toolkit<a class="headerlink" href="#command-line-toolkit" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="packages">
+<h1>Packages<a class="headerlink" href="#packages" title="Permalink to this headline">¶</a></h1>
+<p>Mahotas</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/zsh</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/bash</span></code></p></li>
+<li><p><a class="reference external" href="https://mahotas.readthedocs.io/en/latest/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/luispedro/mahotas">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/mahotas/">PyPI</a></p></li>
 </ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">echo</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span> <span class="pre">|</span> <span class="pre">tr</span> <span class="pre">:</span> <span class="pre">'\n'</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$SHELL</span></code> or <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$0</span></code></p></li>
+<p>NumPy</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://numpy.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://numpy.org/doc/stable/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/numpy/numpy">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/numpy/">PyPI</a></p></li>
 </ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span></code> Print the host name and its domain.</p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">hostname</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">hostname</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span> <span class="pre">-s</span></code> Print the host name.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span> <span class="pre">-d</span></code> Print the host name’s domain.</p></li>
+<p>OpenCV</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://opencv.org/">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.opencv.org/4.x/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/opencv/opencv-python">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/opencv-python/">PyPI</a></p></li>
 </ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">id</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">id</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">-u</span></code> Print the effective UID.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">-un</span></code> Print the effective user name.</p></li>
+<p>Pillow</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://python-pillow.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://pillow.readthedocs.io/en/stable/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/python-pillow/Pillow">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/Pillow/">PyPI</a></p></li>
 </ul>
-</li>
-<li><p><a class="reference external" href="https://stedolan.github.io/jq/"><code class="docutils literal notranslate"><span class="pre">jq</span></code></a></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ls</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">ls</span></code>?</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">open</span></code> (macOS)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p>
-<ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">pwd</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">pwd</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span> <span class="pre">-L</span></code> Logical. Same as <code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span> <span class="pre">-P</span></code> Physical.</p></li>
-</ul>
-</li>
-<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code> (Windows)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">uname</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">whence</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">where</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">which</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">whoami</span></code> Print the effective user name.</p></li>
+<p>Scikit-Image</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://scikit-image.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://scikit-image.org/docs/stable/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/scikit-image/scikit-image">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://pypi.org/project/scikit-image/">PyPI</a></p></li>
 </ul>
 </div>
 
@@ -485,7 +469,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./commandline"
+            path: "./python"
         },
         predefinedOutput: true
     }
@@ -497,17 +481,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="../python/packages.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Jupyter/jupyter.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Packages</p>
+            <p class="prev-next-title">Jupyter</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../platforms/platforms.html" title="next page">
+    <a class='right-next' id="next-link" href="../commandline/commandline.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Platforms</p>
+        <p class="prev-next-title">Command Line Toolkit</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
