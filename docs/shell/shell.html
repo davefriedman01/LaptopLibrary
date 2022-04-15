@@ -272,11 +272,6 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../commandline/commandline.html">
-     Command Line Toolkit
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../platforms/platforms.html">
      Platforms
@@ -420,6 +415,11 @@ const thebe_selector_output = ".output, .cell_output"
    Shells
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toolkit">
+   Toolkit
+  </a>
+ </li>
 </ul>
 
             </nav>
@@ -450,6 +450,11 @@ const thebe_selector_output = ".output, .cell_output"
    Shells
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toolkit">
+   Toolkit
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -474,6 +479,110 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><a class="reference internal" href="bash/bash.html"><span class="doc std std-doc">Bash</span></a></p></li>
 <li><p><a class="reference internal" href="powershell/powershell.html"><span class="doc std std-doc">PowerShell</span></a></p></li>
 <li><p><a class="reference internal" href="zsh/zsh.html"><span class="doc std std-doc">Zsh</span></a></p></li>
+</ul>
+</div>
+<div class="section" id="toolkit">
+<h2>Toolkit<a class="headerlink" href="#toolkit" title="Permalink to this headline">¶</a></h2>
+<p>The following commands were run with Bash v5.1.16 and Zsh v5.8.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">awk</span></code> Pattern-Directed Scanning and Processing Language</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">awk</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">awk</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cd</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/zsh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">chsh</span> <span class="pre">-s</span> <span class="pre">/bin/bash</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$PATH</span> <span class="pre">|</span> <span class="pre">tr</span> <span class="pre">:</span> <span class="pre">'\n'</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$SHELL</span></code> or <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">$0</span></code></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ed</span></code> or <code class="docutils literal notranslate"><span class="pre">red</span></code> Line-Oriented Text Editor</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ed</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">ed</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">expand</span></code> Expand tabs to spaces</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">expand</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">expand</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span></code> Print the host name and its domain.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">hostname</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">hostname</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span> <span class="pre">-s</span></code> Print the host name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hostname</span> <span class="pre">-d</span></code> Print the host name’s domain.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">id</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">id</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">-u</span></code> Print the effective UID.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">id</span> <span class="pre">-un</span></code> Print the effective user name.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jot</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">jot</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">jot</span></code>?</p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://stedolan.github.io/jq/"><code class="docutils literal notranslate"><span class="pre">jq</span></code></a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ls</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ls</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">ls</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">open</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">pwd</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">pwd</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span> <span class="pre">-L</span></code> Logical. Same as <code class="docutils literal notranslate"><span class="pre">pwd</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pwd</span> <span class="pre">-P</span></code> Physical.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">rs</span></code> Reshape a data array</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">rs</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">rs</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sed</span></code> “stream editor”</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">sed</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">sed</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">seq</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">seq</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">seq</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">start</span></code> (Windows)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">type</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">uname</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unexpand</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">whence</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">where</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">which</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">whoami</span></code> Print the effective user name.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">yes</span></code></p></li>
+</ul>
+<p>Sequences and Brace Expansion</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{0..10}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{00..10}</span></code> (Bash v4+)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{10..0}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{10..0..2}</span></code> (Bash v4+)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{a..z}</span></code> vs <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{A..z}</span></code> vs <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{a..z}</span> <span class="pre">{A..Z}</span></code> vs <code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{a..z}{A..Z}</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">{z..a..2}</span></code> (Bash v4+)</p></li>
+</ul>
+<p>Other</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">ascii</span></code></p></li>
 </ul>
 </div>
 <div class="toctree-wrapper compound">
