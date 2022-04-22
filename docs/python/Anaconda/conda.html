@@ -286,6 +286,11 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/gettingstarted/vim.html">
+       Getting Started with Vim
+      </a>
+     </li>
+     <li class="toctree-l3">
       <a class="reference internal" href="../../laptoplab/vscode.html">
        VS Code
       </a>
@@ -706,6 +711,36 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">~/.condarc</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">~/.continuum</span></code></p></li>
 </ul>
+<p>A PyViz environment</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">pyvizenv</span> <span class="pre">python=3.7</span> <span class="pre">anaconda</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python-dotenv</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">anaconda</span> <span class="pre">nb_conda</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">nodejs=12</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">pyviz</span> <span class="pre">holoviz</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">plotly</span> <span class="pre">plotly</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyterlab=2.2</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy==1.19</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">matplotlib==3.0.3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (Windows)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;jupyter-widgets/jupyterlab-manager</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">jupyterlab-plotly</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">plotlywidget</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;pyviz/jupyterlab_pyviz</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span> <span class="pre">build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unset</span> <span class="pre">NODE_OPTIONS</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=</span></code> (Windows)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nodejs</span>     <span class="mf">12.0.0</span>
+<span class="n">holoviz</span>    <span class="mf">0.11.3</span>
+<span class="n">hvplot</span>     <span class="mf">0.7.1</span>
+<span class="n">panel</span>      <span class="mf">0.10.3</span>
+<span class="n">plotly</span>     <span class="mf">4.14.3</span>
+<span class="n">numpy</span>      <span class="mf">1.19</span>
+<span class="n">matplotlib</span> <span class="mf">3.0.3</span>
+</pre></div>
+</div>
 </section>
 </section>
 
