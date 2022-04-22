@@ -54,7 +54,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Getting Started with Vim" href="gettingstarted/vim.html" />
+    <link rel="next" title="VS Code" href="vscode.html" />
     <link rel="prev" title="Table of Contents" href="texteditor.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -286,11 +286,6 @@ const thebe_selector_output = ".output, .cell_output"
       </a>
      </li>
      <li class="toctree-l3">
-      <a class="reference internal" href="gettingstarted/vim.html">
-       Getting Started with Vim
-      </a>
-     </li>
-     <li class="toctree-l3">
       <a class="reference internal" href="vscode.html">
        VS Code
       </a>
@@ -495,6 +490,16 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-vim">
+   Getting Started with Vim
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#people">
    People
   </a>
@@ -530,6 +535,16 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#getting-started-with-vim">
+   Getting Started with Vim
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#people">
    People
   </a>
@@ -555,12 +570,73 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="vim">
 <h1>Vim<a class="headerlink" href="#vim" title="Permalink to this headline">¶</a></h1>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://www.vim.org">Home</a></p></li>
 <li><p><a class="reference external" href="https://www.vim.org/docs.php">Docs</a></p></li>
 <li><p><a class="reference external" href="https://iccf-holland.org/vim_books.html">Vim Books</a></p></li>
 <li><p>YouCompleteMe <a class="reference external" href="https://github.com/ycm-core/YouCompleteMe">GitHub</a></p></li>
 <li><p>deoplete.nvim <a class="reference external" href="https://github.com/Shougo/deoplete.nvim/">GitHub</a></p></li>
+</ul>
+</section>
+<section id="getting-started-with-vim">
+<h2>Getting Started with Vim<a class="headerlink" href="#getting-started-with-vim" title="Permalink to this headline">¶</a></h2>
+<p>In the terminal, run <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">--version</span></code> to check which version of Vim is installed. Vim has historically been installed at <code class="docutils literal notranslate"><span class="pre">/usr/bin/vim</span></code>.</p>
+<p>Try out vimtutor by running <code class="docutils literal notranslate"><span class="pre">vimtutor</span></code>!</p>
+<p>Check out <a class="reference external" href="https://vim-adventures.com">Vim Adventures</a>, too.</p>
+<p>To open a file called <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> in Vim, run <code class="docutils literal notranslate"><span class="pre">vim</span> <span class="pre">example.txt</span></code>. If file <code class="docutils literal notranslate"><span class="pre">example.txt</span></code> does not yet exist, it will be created when you save it.</p>
+<p>There are two modes in Vim: command mode and insert mode. When you open Vim you start in command mode. To enter insert mode, press key <code class="docutils literal notranslate"><span class="pre">i</span></code>. To enter command mode, press Escape.</p>
+<p>To start typing source code, first enter insert mode.</p>
+<p>To save the file, enter command mode (press Escape); press key <code class="docutils literal notranslate"><span class="pre">:</span></code>; press key <code class="docutils literal notranslate"><span class="pre">w</span></code> for “write”; and press Enter. The file is saved.</p>
+<p>To quit Vim, enter command mode (press Escape); press key <code class="docutils literal notranslate"><span class="pre">:</span></code>; press key <code class="docutils literal notranslate"><span class="pre">q</span></code> for “quit”; and press Enter: <code class="docutils literal notranslate"><span class="pre">:q</span></code>. If you have unsaved changes, you may want to save and quit (<code class="docutils literal notranslate"><span class="pre">:wq</span></code>) or just quit without saving them (<code class="docutils literal notranslate"><span class="pre">:q!</span></code>).</p>
+<p>Command Mode Shortcuts</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">i</span></code> Enter insert mode to the left of the cursor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">I</span></code> Enter insert mode at the start of the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">a</span></code> Enter insert mode to the right of the cursor.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">A</span></code> Enter insert mode at the end of the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gg</span></code> Move the cursor to the first line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">g50g</span></code> Move the cursor 50 lines ahead.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">G</span></code> Move the cursor to the last line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">u</span></code> or <code class="docutils literal notranslate"><span class="pre">:undo</span></code> Undo the last action.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">U</span></code> Undo all recent changes made to the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-r</span></code> or <code class="docutils literal notranslate"><span class="pre">:redo</span></code> Redo.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dd</span></code> or <code class="docutils literal notranslate"><span class="pre">:d</span></code> Delete (and copy to the clipboard) the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">d50d</span></code> Delete (and copy to the clipboard) the next 50 lines.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">d50gg</span></code> Delete (and copy to the clipboard) all lines between the current line and line 50.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">x</span></code> Delete the current character.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">50x</span></code> Delete the next 50 characters.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">yy</span></code> or <code class="docutils literal notranslate"><span class="pre">:y</span></code> Copy the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">y50w</span></code> Copy the next 50 words.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">p</span></code> Paste below the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">P</span></code> Paste above the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zz</span></code> Move the current line to the middle of the screen.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:50</span></code> Move the cursor to line 50.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">n</span></code> Move the cursor to the next search match.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">N</span></code> Move the cursor to the previous search match.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:noh</span></code> Turn off highlighting until the next search.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">j</span></code> Move down.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">k</span></code> Move up.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">h</span></code> Move left.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">l</span></code> Move right.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">w</span></code> Move to the beginnging of the next word.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">W</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">e</span></code> Move to the end of the next word.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">E</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">b</span></code> Move to the beginning of the previous word.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">B</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">0</span></code> Move to the beginning of the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">$</span></code> Move to the end of the current line.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-f</span></code> Page down/forward.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-b</span></code> Page up/backward.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-d</span></code> Half-page down/forward.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Ctrl-u</span></code> Half-page up/backward.</p></li>
+</ul>
+<p>Find and Replace</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/foo</span></code> Search the file for all instances of <code class="docutils literal notranslate"><span class="pre">foo</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">:%s/old/new/g</span></code> Replace all instances of <code class="docutils literal notranslate"><span class="pre">old</span></code> with <code class="docutils literal notranslate"><span class="pre">new</span></code>.</p></li>
 </ul>
 <p>Commands</p>
 <ul class="simple">
@@ -585,6 +661,7 @@ const thebe_selector_output = ".output, .cell_output"
 <span class="n">syn</span> <span class="n">enable</span>  <span class="s2">&quot; syntax highlighting enabled</span>
 </pre></div>
 </div>
+</section>
 <section id="people">
 <h2>People<a class="headerlink" href="#people" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
@@ -643,10 +720,10 @@ const thebe_selector_output = ".output, .cell_output"
             <p class="prev-next-title">Table of Contents</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="gettingstarted/vim.html" title="next page">
+    <a class='right-next' id="next-link" href="vscode.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Getting Started with Vim</p>
+        <p class="prev-next-title">VS Code</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
