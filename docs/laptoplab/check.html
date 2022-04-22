@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Quick Checks &#8212; Laptop Library</title>
+    <title>Troubleshooting and Verification &#8212; Laptop Library</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -483,6 +483,29 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-do">
+   To Do
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update">
+   Update
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-checks">
+   Quick Checks
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -490,19 +513,66 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Quick Checks</h1>
+                <h1>Troubleshooting and Verification</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#to-do">
+   To Do
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#update">
+   Update
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#quick-checks">
+   Quick Checks
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="quick-checks">
-<h1>Quick Checks<a class="headerlink" href="#quick-checks" title="Permalink to this headline">¶</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="troubleshooting-and-verification">
+<h1>Troubleshooting and Verification<a class="headerlink" href="#troubleshooting-and-verification" title="Permalink to this headline">¶</a></h1>
+<section id="to-do">
+<h2>To Do<a class="headerlink" href="#to-do" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Git</p>
+<ul>
+<li><p>Git won’t ignore <code class="docutils literal notranslate"><span class="pre">name</span></code> even though I added <code class="docutils literal notranslate"><span class="pre">name</span></code> to file <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.</p>
+<ul>
+<li><p>Solution: Run <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span> <span class="pre">name</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">add</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">push</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Managing large files on GitHub: see documentation</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="update">
+<h2>Update<a class="headerlink" href="#update" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Anaconda <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">&amp;&amp;</span> <span class="pre">conda</span> <span class="pre">update</span> <span class="pre">anaconda</span> <span class="pre">&amp;&amp;</span> <span class="pre">conda</span> <span class="pre">clean</span> <span class="pre">--all</span></code></p></li>
+<li><p>Homebrew <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">update</span> <span class="pre">&amp;&amp;</span> <span class="pre">brew</span> <span class="pre">upgrade</span> <span class="pre">&amp;&amp;</span> <span class="pre">brew</span> <span class="pre">cleanup</span></code></p></li>
+</ul>
+</section>
+<section id="quick-checks">
+<h2>Quick Checks<a class="headerlink" href="#quick-checks" title="Permalink to this headline">¶</a></h2>
 <p>Shell</p>
 <ul class="simple">
 <li><p>Which shell is currently set as the default?</p>
@@ -565,6 +635,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 </ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
