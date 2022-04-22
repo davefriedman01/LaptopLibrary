@@ -472,6 +472,29 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#people">
+   People
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#texts">
+   Texts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -484,6 +507,29 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#people">
+   People
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#texts">
+   Texts
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -505,42 +551,45 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">tabstop=2</span></code> The width of the tab character measured in spaces.</p></li>
 </ul>
 <p>Config</p>
-<ul>
+<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">~/.vimrc</span></code></p></li>
-<li><div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-</pre></div>
-</div>
-</li>
+<li></li>
 </ul>
-<p>set ai      ” autoindent
-set et      ” expandtab
-filetype indent on
-“filetype indent plugin on
-set nu      ” number (“display line numbers”)
-set sw=2    ” shiftwidth
-set ts=2    ” tabstop
-“syn on     ” syntax highlighting on
-syn enable  ” syntax highlighting enabled</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>
-<span class="c1">## People</span>
-
-<span class="o">*</span> <span class="n">Moolenaar</span><span class="p">,</span> <span class="n">Bram</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Bram_Moolenaar</span><span class="p">)</span>
-
-<span class="c1">## Texts</span>
-
-<span class="o">*</span> <span class="n">Robbins</span><span class="p">,</span> <span class="n">Arnold</span> <span class="o">&amp;</span> <span class="n">Elbert</span> <span class="n">Hannah</span><span class="o">.</span> <span class="p">(</span><span class="mi">2021</span><span class="p">)</span><span class="o">.</span> <span class="n">_Learning</span> <span class="n">the</span> <span class="n">vi</span> <span class="o">&amp;</span> <span class="n">Vim</span> <span class="n">Editors</span><span class="p">:</span> <span class="n">Power</span> <span class="ow">and</span> <span class="n">Agility</span> <span class="n">Beyond</span> <span class="n">Just</span> <span class="n">Text</span> <span class="n">Editing_</span><span class="o">.</span> <span class="mi">8</span><span class="n">th</span> <span class="n">Ed</span><span class="o">.</span> <span class="n">O</span><span class="s1">&#39;Reilly. [Wiki](https://en.wikipedia.org/wiki/Learning_the_vi_and_Vim_Editors).</span>
-
-<span class="c1">## Terms</span>
-
-<span class="o">*</span> <span class="n">Ed</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Ed_</span><span class="p">(</span><span class="n">text_editor</span><span class="p">))</span>
-<span class="o">*</span> <span class="n">Ex</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Ex_</span><span class="p">(</span><span class="n">text_editor</span><span class="p">))</span>
-<span class="o">*</span> <span class="n">Line</span> <span class="n">Editor</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Line_editor</span><span class="p">)</span>
-<span class="o">*</span> <span class="n">Text</span> <span class="n">Editor</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Text_editor</span><span class="p">)</span>
-<span class="o">*</span> <span class="n">Text</span> <span class="n">User</span> <span class="n">Interface</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Text</span><span class="o">-</span><span class="n">based_user_interface</span><span class="p">)</span>
-<span class="o">*</span> <span class="n">Vi</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Vi</span><span class="p">)</span>
-<span class="o">*</span> <span class="n">Vim</span> <span class="p">[</span><span class="n">Wiki</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">Vim_</span><span class="p">(</span><span class="n">text_editor</span><span class="p">))</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span> <span class="n">ai</span>      <span class="s2">&quot; autoindent</span>
+<span class="nb">set</span> <span class="n">et</span>      <span class="s2">&quot; expandtab</span>
+<span class="n">filetype</span> <span class="n">indent</span> <span class="n">on</span>
+<span class="s2">&quot;filetype indent plugin on</span>
+<span class="nb">set</span> <span class="n">nu</span>      <span class="s2">&quot; number (&quot;</span><span class="n">display</span> <span class="n">line</span> <span class="n">numbers</span><span class="s2">&quot;)</span>
+<span class="nb">set</span> <span class="n">sw</span><span class="o">=</span><span class="mi">2</span>    <span class="s2">&quot; shiftwidth</span>
+<span class="nb">set</span> <span class="n">ts</span><span class="o">=</span><span class="mi">2</span>    <span class="s2">&quot; tabstop</span>
+<span class="s2">&quot;syn on     &quot;</span> <span class="n">syntax</span> <span class="n">highlighting</span> <span class="n">on</span>
+<span class="n">syn</span> <span class="n">enable</span>  <span class="s2">&quot; syntax highlighting enabled</span>
 </pre></div>
 </div>
+<section id="people">
+<h2>People<a class="headerlink" href="#people" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Moolenaar, Bram <a class="reference external" href="https://en.wikipedia.org/wiki/Bram_Moolenaar">Wiki</a></p></li>
+</ul>
+</section>
+<section id="texts">
+<h2>Texts<a class="headerlink" href="#texts" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Robbins, Arnold &amp; Elbert Hannah. (2021). <em>Learning the vi &amp; Vim Editors: Power and Agility Beyond Just Text Editing</em>. 8th Ed. O’Reilly. <a class="reference external" href="https://en.wikipedia.org/wiki/Learning_the_vi_and_Vim_Editors">Wiki</a>.</p></li>
+</ul>
+</section>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Ed <a class="reference external" href="https://en.wikipedia.org/wiki/Ed_(text_editor)">Wiki</a></p></li>
+<li><p>Ex <a class="reference external" href="https://en.wikipedia.org/wiki/Ex_(text_editor)">Wiki</a></p></li>
+<li><p>Line Editor <a class="reference external" href="https://en.wikipedia.org/wiki/Line_editor">Wiki</a></p></li>
+<li><p>Text Editor <a class="reference external" href="https://en.wikipedia.org/wiki/Text_editor">Wiki</a></p></li>
+<li><p>Text User Interface <a class="reference external" href="https://en.wikipedia.org/wiki/Text-based_user_interface">Wiki</a></p></li>
+<li><p>Vi <a class="reference external" href="https://en.wikipedia.org/wiki/Vi">Wiki</a></p></li>
+<li><p>Vim <a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Wiki</a></p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
