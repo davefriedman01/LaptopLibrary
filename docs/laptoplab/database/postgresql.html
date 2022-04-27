@@ -395,10 +395,27 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../javascript.html">
-     JavaScript
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../javascript/README.html">
+     JavaScript Ecosystem
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../javascript/d3.html">
+       D3.js
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../javascript/leaflet.html">
+       Leaflet.js
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../computation/web.html">
@@ -414,8 +431,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../../platforms/platforms.html">
      Platforms
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-    <label for="toctree-checkbox-12">
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -436,8 +453,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../security/README.html">
      Security
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-    <label for="toctree-checkbox-13">
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -453,8 +470,8 @@ const thebe_selector_output = ".output, .cell_output"
     <a class="reference internal" href="../troubleshoot/README.html">
      Logistical
     </a>
-    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-    <label for="toctree-checkbox-14">
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
      <i class="fas fa-chevron-down">
      </i>
     </label>
@@ -557,6 +574,31 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#postgresql">
+   PostgreSQL
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commands">
+     Commands
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pgadmin">
+   pgAdmin
+  </a>
+ </li>
+</ul>
+
+            </nav>
         </div>
     </div>
 </div>
@@ -569,6 +611,31 @@ const thebe_selector_output = ".output, .cell_output"
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#postgresql">
+   PostgreSQL
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#commands">
+     Commands
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#pgadmin">
+   pgAdmin
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -577,6 +644,47 @@ const thebe_selector_output = ".output, .cell_output"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="postgresql-pgadmin">
 <h1>PostgreSQL &amp; pgAdmin<a class="headerlink" href="#postgresql-pgadmin" title="Permalink to this headline">¶</a></h1>
+<section id="postgresql">
+<h2>PostgreSQL<a class="headerlink" href="#postgresql" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/">Docs</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/index.html">14</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/tutorial-start.html">Getting Started</a></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/PostgreSQL">Wiki</a></p></li>
+</ul>
+<section id="commands">
+<h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
+<p>init_db</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">init_db</span></code></p></li>
+</ul>
+<p>pg_config</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pg_config</span></code></p></li>
+</ul>
+<p>psql</p>
+<ul class="simple">
+<li><p>`psql</p></li>
+</ul>
+</section>
+</section>
+<section id="pgadmin">
+<h2>pgAdmin<a class="headerlink" href="#pgadmin" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.pgadmin.org/docs/pgadmin4/latest/index.html">Docs</a></p>
+<ul>
+<li><p><a class="reference external" href="https://www.pgadmin.org/docs/pgadmin4/latest/getting_started.html">Getting Started</a></p></li>
+<li><p><a class="reference external" href="https://www.pgadmin.org/docs/pgadmin4/latest/import_export_data.html">Import/Export Data Dialog</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
