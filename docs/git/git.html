@@ -617,6 +617,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-large-file-storage">
+   Git Large File Storage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#resources">
    Resources
   </a>
@@ -674,6 +679,11 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-large-file-storage">
+   Git Large File Storage
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#resources">
    Resources
   </a>
@@ -701,13 +711,23 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>git<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p><a class="reference external" href="https://git-scm.com/">Home</a></p></li>
-<li><p><a class="reference external" href="https://git-scm.com/doc">Docs</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/doc">Docs</a></p>
+<ul>
+<li><p><a class="reference external" href="https://git-scm.com/docs/gitattributes">gitattributes</a></p></li>
+<li><p>gitignore</p></li>
+</ul>
+</li>
 </ul>
 <section id="commands">
 <h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
 <p>git branch</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-M</span> <span class="pre">main</span></code> Rename the current branch to <code class="docutils literal notranslate"><span class="pre">main</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-av</span></code> View all local and remote branches.</p></li>
+</ul>
+</li>
 </ul>
 <p>git checkout</p>
 <ul class="simple">
@@ -718,9 +738,15 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code>?</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">-l</span></code> List the variable-value pairs in config file <code class="docutils literal notranslate"><span class="pre">~/.gitconfig</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">&quot;email&#64;example.com&quot;</span></code> Set the commit email address.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">myUsername</span></code> Set the commit name to <code class="docutils literal notranslate"><span class="pre">myUsername</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">&quot;myEmail&#64;example.com&quot;</span></code> Set the commit email address to <code class="docutils literal notranslate"><span class="pre">myEmail&#64;example.com</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">init.defaultBranch</span> <span class="pre">main</span></code> Set the default branch name to <code class="docutils literal notranslate"><span class="pre">main</span></code> for new repos.</p></li>
 </ul>
 </li>
+</ul>
+<p>git diff</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code></p></li>
 </ul>
 <p>git fetch</p>
 <ul class="simple">
@@ -754,9 +780,30 @@ const thebe_selector_output = ".output, .cell_output"
 <ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span></code></p></li>
 </ul>
+<p>git reflog</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reflog</span></code></p></li>
+</ul>
+<p>git remote</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">get-url</span> <span class="pre">--all</span> <span class="pre">origin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">origin</span> <span class="pre">git&#64;github.com:myGitHubUsername/myRepo.git</span></code></p></li>
+</ul>
+</li>
+</ul>
 <p>git reset</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--soft</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--hard</span> <span class="pre">HEAD^</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--hard</span> <span class="pre">HEAD~2</span></code></p></li>
+</ul>
+</li>
 </ul>
 <p>git restore</p>
 <ul class="simple">
@@ -773,7 +820,11 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <p>git status</p>
 <ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span> <span class="pre">-u</span></code></p></li>
+</ul>
+</li>
 </ul>
 </section>
 <section id="config">
@@ -834,6 +885,13 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span> <span class="pre">list</span></code> Print a list of configuration keys and values.</p></li>
 </ul>
 </li>
+</ul>
+</section>
+<section id="git-large-file-storage">
+<h2>Git Large File Storage<a class="headerlink" href="#git-large-file-storage" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-lfs.github.com">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/repositories/working-with-files/managing-large-files">GitHub</a></p></li>
 </ul>
 </section>
 <section id="resources">

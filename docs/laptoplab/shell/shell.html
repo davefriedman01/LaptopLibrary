@@ -706,9 +706,12 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">cp</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">cp</span></code>?</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">crontab</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">crontab</span></code> “cronos table”</p>
 <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-l</span></code> List the current user’s table.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">crontab</span> <span class="pre">-e</span></code> Edit the current user’s table.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">crontab</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">crontab</span></code>?</p></li>
+<li><p>Located at <code class="docutils literal notranslate"><span class="pre">/var/spool/cron</span></code></p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">cut</span></code></p>
@@ -767,13 +770,24 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">fg</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">fg</span></code>?</p></li>
 </ul>
 </li>
+<li><p><code class="docutils literal notranslate"><span class="pre">free</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">free</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">free</span></code>?</p></li>
+</ul>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">grep</span></code></p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">grep</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">grep</span></code>?</p></li>
 </ul>
 </li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gunzip</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">gunzip</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gunzip</span></code>?</p></li>
+</ul>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">gzip</span></code></p>
 <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gzip</span> <span class="pre">archive.tar</span></code> Compress tarball <code class="docutils literal notranslate"><span class="pre">archive.tar</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">gzip</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gzip</span></code>?</p></li>
 </ul>
 </li>
@@ -866,6 +880,14 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">lsof</span></code> “list open files”</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">lsof</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">lsof</span></code>?</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">lynis</span></code> System and security auditing tool</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">apt</span> <span class="pre">install</span> <span class="pre">lynis</span></code> <a class="reference external" href="https://packages.cisofy.com/community/#debian-ubuntu">Install <code class="docutils literal notranslate"><span class="pre">lynis</span></code> on Debian</a>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">lynis</span> <span class="pre">show</span> <span class="pre">help</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">sudo</span> <span class="pre">lynis</span> <span class="pre">show</span> <span class="pre">groups</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">lynis</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">lynis</span></code>?</p></li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">mkdir</span></code> “make directory”</p>
@@ -985,11 +1007,20 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">tail</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">tail</span></code>?</p></li>
 </ul>
 </li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tar</span></code></p>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span></code> “tape archive”</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">-cvfz</span> <span class="pre">archive.tar.gz</span> <span class="pre">myDirectory</span></code> Compress example.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">-xvfz</span> <span class="pre">archive.tar.gz</span></code> Uncompress/extract example.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">cvf</span> <span class="pre">archive.tar</span> <span class="pre">myDirectory</span></code> Create a full backup of <code class="docutils literal notranslate"><span class="pre">myDirectory</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">cvvf</span> <span class="pre">archive.tar</span> <span class="pre">myDirectory</span></code> Create a full backup of <code class="docutils literal notranslate"><span class="pre">myDirectory</span></code> with more verbose output.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">cvvfz</span> <span class="pre">archive.tar.gz</span> <span class="pre">myDirectory</span></code> Backup and compress <code class="docutils literal notranslate"><span class="pre">myDirectory</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">xvvfz</span> <span class="pre">archive.tar.gz</span></code> Extract everything from <code class="docutils literal notranslate"><span class="pre">archive.tar.gz</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">xvvfz</span> <span class="pre">archive.tar.gz</span> <span class="pre">-C</span> <span class="pre">newDirectory</span> <span class="pre">--wildcards</span> <span class="pre">&quot;*.csv&quot;</span></code> Extract all CSV files from <code class="docutils literal notranslate"><span class="pre">archive.tar.gz</span></code> and place them into <code class="docutils literal notranslate"><span class="pre">newDirectory</span></code>.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">tar</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">tar</span></code>?</p></li>
+<li><p>To use GNU tar on macOS, install it with <code class="docutils literal notranslate"><span class="pre">brew</span> <span class="pre">install</span> <span class="pre">gnu-tar</span> <span class="pre">&amp;&amp;</span> <span class="pre">gtar</span> <span class="pre">--version</span></code>.</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">tar</span> <span class="pre">--version</span></code> Check the version of BSD tar.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gtar</span> <span class="pre">--version</span></code> Check the version of GNU tar.</p></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><p><code class="docutils literal notranslate"><span class="pre">top</span></code></p>
@@ -1010,6 +1041,7 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><code class="docutils literal notranslate"><span class="pre">type</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">uname</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">unexpand</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">untar</span></code></p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">unzip</span></code></p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">man</span> <span class="pre">unzip</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">unzip</span></code>?</p></li>
