@@ -666,6 +666,8 @@ const thebe_selector_output = ".output, .cell_output"
 <li><p><a class="reference external" href="https://www.postgresql.org/docs/14/index.html">14</a></p>
 <ul>
 <li><p><a class="reference external" href="https://www.postgresql.org/docs/14/tutorial-start.html">Getting Started</a></p></li>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/tutorial-createdb.html">1.3 Creating a Database</a></p></li>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/tutorial-accessdb.html">1.4 Accessing a Database</a></p></li>
 </ul>
 </li>
 </ul>
@@ -674,17 +676,45 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <div class="section" id="commands">
 <h3>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h3>
-<p>init_db</p>
 <ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">createdb</span></code></p>
+<ul>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/app-createdb.html">Docs</a></p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">createuser</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">dropdb</span></code></p>
+<ul>
+<li><p><a class="reference external" href="https://www.postgresql.org/docs/14/app-dropdb.html">Docs</a></p></li>
+</ul>
+</li>
 <li><p><code class="docutils literal notranslate"><span class="pre">init_db</span></code></p></li>
-</ul>
-<p>pg_config</p>
-<ul class="simple">
 <li><p><code class="docutils literal notranslate"><span class="pre">pg_config</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">psql</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">psql</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">-V</span></code> Which version of <code class="docutils literal notranslate"><span class="pre">psql</span></code> am I using?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">psql</span> <span class="pre">-l</span></code> List databases.</p></li>
 </ul>
-<p>psql</p>
+</li>
+</ul>
+<p>Internal Commands</p>
 <ul class="simple">
-<li><p>`psql</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\?</span></code> List internal commands.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\h</span></code> List help.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\c</span></code> Connect to a database.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\conninfo</span></code> Current connection information.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\l+</span></code> List databases.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\d+</span> <span class="pre">table_name</span></code> List tables, views, and sequences.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\dt+</span></code> List tables.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\du+</span></code> List users.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">\q</span></code> Exit psql.</p></li>
+</ul>
+<p>SQL Commands</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">version();</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">current_date;</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">SELECT</span> <span class="pre">2</span> <span class="pre">+</span> <span class="pre">2;</span></code></p></li>
 </ul>
 </div>
 </div>
