@@ -4,52 +4,13 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Anaconda &#8212; Laptop Library</title>
-    <script src="https://unpkg.com/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://unpkg.com/tippy.js@6.3.1/dist/tippy-bundle.umd.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     
-        <script>
-            MathJax = {
-            loader: {load: ['[tex]/boldsymbol', '[tex]/textmacros']},
-            tex: {
-                packages: {'[+]': ['boldsymbol', 'textmacros']},
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                processEscapes: true,
-                macros: {
-                    "argmax" : "arg\\,max",
-                    "argmin" : "arg\\,min",
-                    "col"    : "col",
-                    "Span"   :  "span",
-                    "epsilon": "\\varepsilon",
-                    "EE": "\\mathbb{E}",
-                    "PP": "\\mathbb{P}",
-                    "RR": "\\mathbb{R}",
-                    "NN": "\\mathbb{N}",
-                    "ZZ": "\\mathbb{Z}",
-                    "aA": "\\mathcal{A}",
-                    "bB": "\\mathcal{B}",
-                    "cC": "\\mathcal{C}",
-                    "dD": "\\mathcal{D}",
-                    "eE": "\\mathcal{E}",
-                    "fF": "\\mathcal{F}",
-                    "gG": "\\mathcal{G}",
-                    "hH": "\\mathcal{H}",
-                }
-            },
-            svg: {
-                fontCache: 'global',
-                scale: 0.92,
-                displayAlign: "center",
-            },
-            };
-        </script>
-    
-    
-    
-  <link href="../../_static/css/theme.css" rel="stylesheet">
-  <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
 
     
   <link rel="stylesheet"
@@ -59,21 +20,16 @@
   <link rel="preload" as="font" type="font/woff2" crossorigin
     href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
 
-    
-      
-
-    
     <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/quantecon-book-theme.1ef59f8f4e91ec8319176e8479c6af4e.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
-    <link rel="stylesheet" type="text/css" href="../../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
     
-  <link rel="preload" as="script" href="../../_static/js/index.be7d3bbb2ef33a8344ce.js">
-
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
 
     <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
     <script src="../../_static/jquery.js"></script>
@@ -81,371 +37,79 @@
     <script src="../../_static/doctools.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
-    <script src="../../_static/quantecon-book-theme.15b0c36fffe88f468997fa7b698991d3.js"></script>
-    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
-    <script>
-        const thebe_selector = ".thebe"
-        const thebe_selector_input = "pre"
-        const thebe_selector_output = ".output"
-    </script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/python/Anaconda/conda.html" />
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Jupyter" href="../Jupyter/jupyter.html" />
     <link rel="prev" title="pip Package Installer for Python" href="../Pip/pip.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
 
-<!-- Normal Meta Tags -->
-<meta name="author" context="Dave Friedman" />
-<meta name="keywords" content="" />
-<meta name="description" content=Anaconda  What is Anaconda?  Anaconda Distribution  Starter Guide  Documentation  Anaconda  Home  Anaconda Individual Edition  Community  Installation  macOS  W />
-
-<!-- Twitter tags -->
-<meta name="twitter:card" content="summary" />
-<meta name="twitter:site" content="@" />
-<meta name="twitter:title" content="Anaconda"/>
-<meta name="twitter:description" content="Anaconda  What is Anaconda?  Anaconda Distribution  Starter Guide  Documentation  Anaconda  Home  Anaconda Individual Edition  Community  Installation  macOS  W">
-<meta name="twitter:creator" content="@">
-<meta name="twitter:image" content="">
-
-<!-- Opengraph tags -->
-<meta property="og:title" content="Anaconda" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://davefriedman01.github.io/LaptopLibrary/python/Anaconda/conda.html" />
-<meta property="og:image" content="" />
-<meta property="og:description" content="Anaconda  What is Anaconda?  Anaconda Distribution  Starter Guide  Documentation  Anaconda  Home  Anaconda Individual Edition  Community  Installation  macOS  W" />
-<meta property="og:site_name" content="Laptop Library" />
-<meta name="theme-color" content="#ffffff" />
-
+    <!-- Google Analytics -->
+    
   </head>
-<body>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
 
+    
+    <div class="container-fluid" id="banner"></div>
 
-    <span id="top"></span>
+    
 
-    <div class="qe-wrapper">
-
-        <div class="qe-main">
-
-            <div class="qe-page" id=python/Anaconda/conda>
-
-                <div class="qe-page__toc">
-
-                    <div class="inner">
-
-                        
-                        <div class="qe-page__toc-header">
-                            On this page
-                        </div>
-
-
-                        <nav id="bd-toc-nav" class="qe-page__toc-nav">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-is-anaconda">
-   What is Anaconda?
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#documentation">
-   Documentation
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#commands">
-   Commands
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#config">
-   Config
-  </a>
- </li>
-</ul>
-
-                            <p class="logo">
-                                
-                            </p>
-
-                            <p class="powered">Powered by <a href="https://jupyterbook.org/">Jupyter Book</a></p>
-
-                        </nav>
-
-                        <div class="qe-page__toc-footer">
-                            
-                            
-                            <p><a href="#top"><strong>Back to top</strong></a></p>
-                        </div>
-
-                    </div>
-
-                </div>
-
-                <div class="qe-page__header">
-
-                    <div class="qe-page__header-copy">
-
-                        <p class="qe-page__header-heading"><a href="../../index.html">Laptop Library</a></p>
-
-                        <p class="qe-page__header-subheading">Anaconda</p>
-
-                    </div>
-
-                    <p class="qe-page__header-authors">Dave Friedman</p>
-
-                </div> <!-- .page__header -->
-
-
-
-                
-                <main class="qe-page__content" role="main">
-                    
-                    <div>
-                        
-  <div class="tex2jax_ignore mathjax_ignore section" id="anaconda">
-<h1>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="what-is-anaconda">
-<h2>What is Anaconda?<a class="headerlink" href="#what-is-anaconda" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/">Anaconda Distribution</a></p></li>
-<li><p><a class="reference external" href="https://docs.anaconda.com/_downloads/9ee215ff15fde24bf01791d719084950/Anaconda-Starter-Guide.pdf">Starter Guide</a></p></li>
-</ul>
-</div>
-<div class="section" id="documentation">
-<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
-<p>Anaconda</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.anaconda.com">Home</a></p></li>
-<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a></p></li>
-<li><p><a class="reference external" href="https://community.anaconda.cloud">Community</a></p></li>
-</ul>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Installation</a></p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/mac-os/">macOS</a></p></li>
-<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a></p></li>
-</ul>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">Uninstallation</a></p>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/update-version/">Update</a></p>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a></p>
-<p><a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/troubleshooting">Troubleshoot</a></p>
-<p>Blog</p>
-<ul class="simple">
-<li><p>A Python Data Scientist’s Guide to the Apple Silicon Transition <a class="reference external" href="https://www.anaconda.com/blog/apple-silicon-transition">Blog</a></p></li>
-<li><p>Keeping Anaconda Up To Date <a class="reference external" href="https://www.anaconda.com/blog/keeping-anaconda-date">Blog</a></p></li>
-<li><p>Understanding Conda and Pip <a class="reference external" href="https://www.anaconda.com/blog/understanding-conda-and-pip">Blog</a></p></li>
-</ul>
-<p>Conda</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/">Docs</a></p></li>
-<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">Getting Started</a></p></li>
-<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf">Cheat Sheet</a></p></li>
-<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/troubleshooting.html">Troubleshooting</a></p></li>
-</ul>
-</div>
-<div class="section" id="commands">
-<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">¶</a></h2>
-<p>conda</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">-V</span></code> What is the conda version?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">&amp;&amp;</span> <span class="pre">conda</span> <span class="pre">update</span> <span class="pre">anaconda</span></code> Update Anaconda.</p></li>
-</ul>
-<p>conda activate</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">ENVNAME</span></code> Activate conda environment ENVNAME.</p></li>
-</ul>
-<p>conda clean</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span> <span class="pre">--all</span></code> Remove unused cache files including unused packages.</p></li>
-</ul>
-<p>conda config</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--add</span> <span class="pre">channels</span> <span class="pre">CHANNELNAME</span></code> Add a channel to your conda configuration.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--show</span></code> Examine conda configuration.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--show-sources</span></code> Examine conda configuration services.</p></li>
-</ul>
-<p>conda create</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">python=3.6</span> <span class="pre">&quot;PKG1&gt;7.6&quot;</span> <span class="pre">PKG2</span></code> Create a new environment named ENVNAME with specific version of Python and packages installed.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--clone</span> <span class="pre">ENVNAME</span> <span class="pre">--name</span> <span class="pre">NEWENV</span></code> Make an exact copy of an environment.</p></li>
-</ul>
-<p>conda deactivate</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code> Deactivate the current environment.</p></li>
-</ul>
-<p>conda env</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">-e</span></code> Which conda environments exist?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">&gt;</span> <span class="pre">envname.yml</span></code> Export an environment to a YAML file.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">--file</span> <span class="pre">envname.yml</span></code> Create an environment from a YAML file.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span></code> Create an environment from the file named <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> in the current directory.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">NEWENV</span> <span class="pre">--file</span> <span class="pre">pkgs.txt</span></code> Create an environment based on exact package versions.</p></li>
-</ul>
-<p>conda info</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> Verify conda is installed and check the version number.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--base</span></code> Where is the base conda environment located in the filesystem?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--envs</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--system</span></code></p></li>
-</ul>
-<p>conda install</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">--revision</span> <span class="pre">REV_NUMBER</span></code> Restore an environment to a previous revision.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-forge::PKGNAME</span></code> Install a package from a specific channel.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">PKGNAME==3.1.4</span></code> Install a package by exact version number.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&quot;PKGNAME[version='3.1.2|3.1.4']&quot;</span></code> Install one of the listed versions (OR).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&quot;PKGNAME&gt;2.5,&lt;3.2&quot;</span></code> Install following several constraints (AND).</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--yes</span> <span class="pre">PKG1</span> <span class="pre">PKG2</span></code> Run most commands without requiring a user prompt.</p></li>
-</ul>
-<p>conda list</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code> List all packages and versions in the active environment.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-n</span> <span class="pre">ENVNAME</span></code> List all packages and versions in environment <code class="docutils literal notranslate"><span class="pre">ENVNAME</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">--revisions</span></code> List all revisions made within the active environment.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-n</span> <span class="pre">ENVNAME</span> <span class="pre">--revisions</span></code> List all revisions made within environment <code class="docutils literal notranslate"><span class="pre">ENVNAME</span></code>.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">--explicit</span> <span class="pre">&gt;</span> <span class="pre">pkgs.txt</span></code> Create an environment based on exact package versions.</p></li>
-</ul>
-<p>conda remove</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">--all</span></code> Delete an entire environment.</p></li>
-</ul>
-<p>conda search</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span> <span class="pre">PKGNAME</span> <span class="pre">--info</span></code> Detailed information about package versions.</p></li>
-</ul>
-<p>conda uninstall</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">PKGNAME</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span></code> Remove a package from an environment.</p></li>
-</ul>
-<p>conda update</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span></code>?</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">-n</span> <span class="pre">base</span> <span class="pre">conda</span></code> Update conda to the current version.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">anaconda</span></code> Update all packages to the latest version of Anaconda.</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">--all</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span></code> Update all packages within an environment.</p></li>
-</ul>
-<p>anaconda</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">anaconda</span> <span class="pre">search</span> <span class="pre">NAME</span></code> Find a package on all channels using the Anaconda client.</p></li>
-</ul>
-</div>
-<div class="section" id="config">
-<h2>Config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">~/.anaconda</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">~/.conda</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">~/.condarc</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">~/.continuum</span></code></p></li>
-</ul>
-<p>A PyViz environment</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">pyvizenv</span> <span class="pre">python=3.7</span> <span class="pre">anaconda</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python-dotenv</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">anaconda</span> <span class="pre">nb_conda</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">nodejs=12</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">pyviz</span> <span class="pre">holoviz</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">plotly</span> <span class="pre">plotly</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyterlab=2.2</span> <span class="pre">-y</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy==1.19</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">matplotlib==3.0.3</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (macOS)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (Windows)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;jupyter-widgets/jupyterlab-manager</span> <span class="pre">--no-build</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">jupyterlab-plotly</span> <span class="pre">--no-build</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">plotlywidget</span> <span class="pre">--no-build</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;pyviz/jupyterlab_pyviz</span> <span class="pre">--no-build</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span> <span class="pre">build</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">unset</span> <span class="pre">NODE_OPTIONS</span></code> (macOS)</p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=</span></code> (Windows)</p></li>
-</ul>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nodejs</span>     <span class="mf">12.0.0</span>
-<span class="n">holoviz</span>    <span class="mf">0.11.3</span>
-<span class="n">hvplot</span>     <span class="mf">0.7.1</span>
-<span class="n">panel</span>      <span class="mf">0.10.3</span>
-<span class="n">plotly</span>     <span class="mf">4.14.3</span>
-<span class="n">numpy</span>      <span class="mf">1.19</span>
-<span class="n">matplotlib</span> <span class="mf">3.0.3</span>
-</pre></div>
-</div>
-</div>
-</div>
-
-    <script type="text/x-thebe-config">
-    {
-        requestKernel: true,
-        binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
-            ref: "master",
-        },
-        codeMirrorConfig: {
-            theme: "abcdef",
-            mode: "python"
-        },
-        kernelOptions: {
-            kernelName: "python3",
-            path: "./python/Anaconda"
-        },
-        predefinedOutput: true
-    }
-    </script>
-    <script>kernelName = 'python3'</script>
-
-                    </div>
-                    
-                </main> <!-- .page__content -->
-                
-
-
-                <footer class="qe-page__footer">
-
-                    <p><a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/80x15.png"></a></p>
-
-                    <p>Creative Commons License &ndash; This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International.</p>
-
-                </footer> <!-- .page__footer -->
-
-            </div> <!-- .page -->
-
-            
-
-            
-            <div class="qe-sidebar bd-sidebar inactive" id="site-navigation">
-
-                <div class="qe-sidebar__header">
-
-
-                    Contents
-
-                </div>
-
-                <nav class="qe-sidebar__nav" id="qe-sidebar-nav" aria-label="Main navigation">
-                    <ul class="nav bd-sidenav nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../../index.html">
-   Table of Contents
-  </a>
- </li>
-</ul>
-<ul class="current nav bd-sidenav nav sidenav_l1">
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Laptop Library</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Table of Contents
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../../ArtificialIntelligence/README.html">
    Artificial Intelligence
@@ -565,7 +229,7 @@
    Virtual Reality
   </a>
  </li>
- <li class="toctree-l1 current active has-children active">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../../laptoplab/laptoplab.html">
    Laptop Lab
   </a>
@@ -575,10 +239,32 @@
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/onezeroone/onezeroone.html">
      101
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../computers/computers101.html">
+       Computers 101
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/onezeroone/filesystem101/filesystem101.html">
+       Filesystem 101
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/onezeroone/programming101/programming101.html">
+       Programming 101
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../laptoplab/git.html">
@@ -590,60 +276,255 @@
      SSH
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/shell/shell.html">
      Shell
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/shell/bash/bash.html">
+       Bash
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/shell/powershell/powershell.html">
+       PowerShell
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/shell/zsh/zsh.html">
+       Zsh
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/texteditor.html">
      Text Editors
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+    <label for="toctree-checkbox-6">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/vim.html">
+       Vim
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/vscode.html">
+       VS Code
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2 current active active">
+   <li class="toctree-l2 current active has-children">
     <a class="reference internal" href="../README.html">
      Python Ecosystem
     </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="../python.html">
+       Python
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Pip/pip.html">
+       Pip
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Anaconda
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../Jupyter/jupyter.html">
+       Jupyter
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../packages.html">
+       Packages
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../resources.html">
+       Resources
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../laptoplab/rlang.html">
      R Ecosystem
     </a>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/data/README.html">
      Data
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/data/characterencoding.html">
+       Character Encoding
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/data/json.html">
+       JSON
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/database/README.html">
      Database
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/database/sql.html">
+       SQL
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/database/postgresql.html">
+       PostgreSQL+pgAdmin
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/database/mongodb.html">
+       MongoDB
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../bigdata/README.html">
      Big Data
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+    <label for="toctree-checkbox-10">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../apache_spark/apache_spark.html">
+       Spark
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/javascript/README.html">
      JavaScript Ecosystem
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+    <label for="toctree-checkbox-11">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/javascript/javascript.html">
+       JavaScript
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/javascript/d3.html">
+       D3.js
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/javascript/leaflet.html">
+       Leaflet.js
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/platforms/platforms.html">
      Platforms
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/platforms/Windows/windows.html">
+       Windows
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/platforms/macOS/macOS.html">
+       macOS
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/security/README.html">
      Security
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+    <label for="toctree-checkbox-13">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/security/elk.html">
+       Elastic Stack
+      </a>
+     </li>
+    </ul>
    </li>
-   <li class="toctree-l2">
+   <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../laptoplab/troubleshoot/README.html">
      Logistical
     </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/troubleshoot/checks.html">
+       Verification
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../laptoplab/troubleshoot/troubleshoot.html">
+       Troubleshoot
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toctree-l2">
     <a class="reference internal" href="../../documentation/documentation.html">
@@ -654,162 +535,450 @@
  </li>
 </ul>
 
-                </nav>
-
-                <div class="qe-sidebar__footer">
-
-                </div>
-
-            </div> <!-- .sidebar -->
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
             
-        </div> <!-- .main -->
-
-        <div class="qe-toolbar">
-
-            <div class="qe-toolbar__inner">
-
-                <ul class="qe-toolbar__main">
-                    <li data-tippy-content="Table of Contents" class="btn__sidebar"><i data-feather="menu"></i></li>
-                    <li data-tippy-content="Home"><a href="../../index.html"><i data-feather="home"></i></a></li>
-                    <li class="btn__qelogo"><a href="" title=""><span class="show-for-sr"></span></a></li>
-                    <!-- <li class="btn__search">
-                        <form action="../../search.html" method="get">
-                            <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off">
-                            <i data-feather="search"></i>
-                        </form>
-                    </li> -->
-                </ul>
-
-                <ul class="qe-toolbar__links">
-                    <li data-tippy-content="Fullscreen" class="btn__fullscreen"><i data-feather="maximize"></i></li>
-                    <li data-tippy-content="Increase font size" class="btn__plus"><i data-feather="plus-circle"></i></li>
-                    <li data-tippy-content="Decrease font size" class="btn__minus"><i data-feather="minus-circle"></i></li>
-                    <li data-tippy-content="Change contrast" class="btn__contrast"><i data-feather="sunset"></i></li>
-                        <li data-tippy-content="Download PDF" onClick="window.print()"><i data-feather="file"></i></li>
-                    <li data-tippy-content="View Source"><a target="_blank" href="https://github.com/davefriedman01/Library//tree/master/book/src/python/Anaconda/conda.md" download><i data-feather="github"></i></a></li>
-                </ul>
-
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
             </div>
-
-        </div> <!-- .toolbar -->
-        <div id="downloadPDFModal" style="display: none;">
-            <ul class="pdf-options" style="display: block;">
-                <li class="download-pdf-book" onClick="window.print()">
-                    <p>Lecture (PDF)</p>
-                </li>
-                <li class="download-pdf-file">
-                    <a href="" download><p>Book (PDF)</p></a>
-                </li>
-            </ul>
+            
         </div>
-        <div id="settingsModal" style="display: none;">
-            <p class="modal-title"> Notebook Launcher </p>
-            <div class="modal-desc">
-            <p>
-                Choose public or private cloud service for "Launch" button.
-            </p>
-            </div>
-            <p class="modal-subtitle">Select a server</p>
-            <ul class="modal-servers">
-            <li class="active launcher-public">
-                <span class="label">Public</span>
-                <select id="launcher-public-input">
-                
-                </select>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            <li class="launcher-private">
-                <span class="label">Private</span>
-                <input type="text" id="launcher-private-input" data-repourl="" data-urlpath="" data-branch=>
-                <i class="fas fa-check-circle"></i>
-            </li>
-            </ul>
-            <p class="launch"><a href="" id="advancedLaunchButton" target="_blank">Launch Notebook</a></p>
-            <script>
-                // QuantEcon Notebook Launcher
-                const launcherTypeElements = document.querySelectorAll('#settingsModal .modal-servers li');
-                // Highlight the server type if previous selection exists
-                if (typeof localStorage.launcherType !== 'undefined') {
-                  for (var i = 0; i < launcherTypeElements.length; i++) {
-                    launcherTypeElements[i].classList.remove('active');
-                    if ( launcherTypeElements[i].classList.contains(localStorage.launcherType) ) {
-                      launcherTypeElements[i].classList.add('active');
-                    }
-                  }
-                }
-                // Highlight server type on click and set local storage value
-                for (var i = 0; i < launcherTypeElements.length; i++) {
-                  launcherTypeElements[i].addEventListener('click', function() {
-                    for (var j = 0; j < launcherTypeElements.length; j++) {
-                      launcherTypeElements[j].classList.remove('active');
-                    }
-                    this.classList.add('active');
-                    if ( this.classList.contains('launcher-private') ) {
-                      localStorage.launcherType = 'launcher-private';
-                    } else if ( this.classList.contains('launcher-public') ) {
-                      localStorage.launcherType = 'launcher-public';
-                    }
-                    setLaunchServer();
-                  })
-                }
-                const launcherPublic = document.getElementById('launcher-public-input');
-                const launcherPrivate = document.getElementById('launcher-private-input');
-                const pageName = "python/Anaconda/conda";
-                const repoURL = "";
-                const urlPath = "";
-                const branch = ""
-                const launchNotebookLink = document.getElementById('advancedLaunchButton');
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
 
-                // Highlight public server option if previous selection exists
-                if (typeof localStorage.launcherPublic !== 'undefined') {
-                  launcherPublic.value = localStorage.launcherPublic;
-                }
-                // Update local storage upon public server selection
-                launcherPublic.addEventListener('change', (event) => {
-                  setLaunchServer();
-                });
-                // Populate private server input if previous entry exists
-                if (typeof localStorage.launcherPrivate !== 'undefined') {
-                  launcherPrivate.value = localStorage.launcherPrivate;
-                }
-                // Update local storage when a private server is entered
-                launcherPrivate.addEventListener('input', (event) => {
-                  setLaunchServer();
-                });
 
-                // Function to update the "Launch Notebook" link href
-                function setLaunchServer() {
-                  launchNotebookLink.removeAttribute("style")
-                  if ( localStorage.launcherType == 'launcher-private' ) {
-                    let repoPrefix = "/jupyter/hub/user-redirect/git-pull?repo=" + repoURL + "&branch=" + branch + "&urlpath=" + urlPath;
-                    launcherPrivateValue = launcherPrivate.value
-                    if (!launcherPrivateValue) {
-                        launchNotebookLink.removeAttribute("href")
-                        launchNotebookLink.style.background = "grey"
-                        return
-                    }
-                    localStorage.launcherPrivate = launcherPrivateValue;
-                    privateServer = localStorage.launcherPrivate.replace(/\/$/, "")
-                    if (!privateServer.includes("http")) {
-                        privateServer = "http://" + privateServer
-                    }
-                    launchNotebookLinkURL = privateServer + repoPrefix;
-                  } else if ( localStorage.launcherType == 'launcher-public' ) {
-                    launcherPublicValue = launcherPublic.options[launcherPublic.selectedIndex].value;
-                    localStorage.launcherPublic = launcherPublicValue;
-                    launchNotebookLinkURL = localStorage.launcherPublic;
-                  }
-                  if (launchNotebookLinkURL) launchNotebookLink.href = launchNotebookLinkURL;
-                }
-                // Check if user has previously selected a server
-                if ( (typeof localStorage.launcherPrivate !== 'undefined') || (typeof localStorage.launcherPublic !== 'undefined') ) {
-                  setLaunchServer();
-                }
-                </script>
+          
 
-        </div>
 
-    </div> <!-- .wrapper-->
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
     
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/python/Anaconda/conda.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-anaconda">
+   What is Anaconda?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commands">
+   Commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#config">
+   Config
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Anaconda</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#what-is-anaconda">
+   What is Anaconda?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#documentation">
+   Documentation
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commands">
+   Commands
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#config">
+   Config
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="anaconda">
+<h1>Anaconda<a class="headerlink" href="#anaconda" title="Permalink to this headline">#</a></h1>
+<section id="what-is-anaconda">
+<h2>What is Anaconda?<a class="headerlink" href="#what-is-anaconda" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/">Anaconda Distribution</a></p></li>
+<li><p><a class="reference external" href="https://docs.anaconda.com/_downloads/9ee215ff15fde24bf01791d719084950/Anaconda-Starter-Guide.pdf">Starter Guide</a></p></li>
+</ul>
+</section>
+<section id="documentation">
+<h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h2>
+<p>Anaconda</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.anaconda.com">Home</a></p></li>
+<li><p><a class="reference external" href="https://www.anaconda.com/products/individual">Anaconda Individual Edition</a></p></li>
+<li><p><a class="reference external" href="https://community.anaconda.cloud">Community</a></p></li>
+</ul>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/">Installation</a></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/mac-os/">macOS</a></p></li>
+<li><p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/windows/">Windows</a></p></li>
+</ul>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/uninstall/">Uninstallation</a></p>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/install/update-version/">Update</a></p>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/getting-started/">Getting Started</a></p>
+<p><a class="reference external" href="https://docs.anaconda.com/anaconda/user-guide/troubleshooting">Troubleshoot</a></p>
+<p>Blog</p>
+<ul class="simple">
+<li><p>A Python Data Scientist’s Guide to the Apple Silicon Transition <a class="reference external" href="https://www.anaconda.com/blog/apple-silicon-transition">Blog</a></p></li>
+<li><p>Keeping Anaconda Up To Date <a class="reference external" href="https://www.anaconda.com/blog/keeping-anaconda-date">Blog</a></p></li>
+<li><p>Understanding Conda and Pip <a class="reference external" href="https://www.anaconda.com/blog/understanding-conda-and-pip">Blog</a></p></li>
+</ul>
+<p>Conda</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://docs.conda.io/projects/conda/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/getting-started.html">Getting Started</a></p></li>
+<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/_downloads/843d9e0198f2a193a3484886fa28163c/conda-cheatsheet.pdf">Cheat Sheet</a></p></li>
+<li><p><a class="reference external" href="https://conda.io/projects/conda/en/latest/user-guide/troubleshooting.html">Troubleshooting</a></p></li>
+</ul>
+</section>
+<section id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">#</a></h2>
+<p>conda</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">-V</span></code> What is the conda version?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span> <span class="pre">&amp;&amp;</span> <span class="pre">conda</span> <span class="pre">update</span> <span class="pre">anaconda</span></code> Update Anaconda.</p></li>
+</ul>
+<p>conda activate</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">ENVNAME</span></code> Activate conda environment ENVNAME.</p></li>
+</ul>
+<p>conda clean</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">clean</span> <span class="pre">--all</span></code> Remove unused cache files including unused packages.</p></li>
+</ul>
+<p>conda config</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--add</span> <span class="pre">channels</span> <span class="pre">CHANNELNAME</span></code> Add a channel to your conda configuration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--show</span></code> Examine conda configuration.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">config</span> <span class="pre">--show-sources</span></code> Examine conda configuration services.</p></li>
+</ul>
+<p>conda create</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">python=3.6</span> <span class="pre">&quot;PKG1&gt;7.6&quot;</span> <span class="pre">PKG2</span></code> Create a new environment named ENVNAME with specific version of Python and packages installed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--clone</span> <span class="pre">ENVNAME</span> <span class="pre">--name</span> <span class="pre">NEWENV</span></code> Make an exact copy of an environment.</p></li>
+</ul>
+<p>conda deactivate</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">deactivate</span></code> Deactivate the current environment.</p></li>
+</ul>
+<p>conda env</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">list</span></code> or <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">-e</span></code> Which conda environments exist?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">export</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">&gt;</span> <span class="pre">envname.yml</span></code> Export an environment to a YAML file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">--file</span> <span class="pre">envname.yml</span></code> Create an environment from a YAML file.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span></code> Create an environment from the file named <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> in the current directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">NEWENV</span> <span class="pre">--file</span> <span class="pre">pkgs.txt</span></code> Create an environment based on exact package versions.</p></li>
+</ul>
+<p>conda info</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span></code> Verify conda is installed and check the version number.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--base</span></code> Where is the base conda environment located in the filesystem?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--envs</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">--system</span></code></p></li>
+</ul>
+<p>conda install</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">--revision</span> <span class="pre">REV_NUMBER</span></code> Restore an environment to a previous revision.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">conda-forge::PKGNAME</span></code> Install a package from a specific channel.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">PKGNAME==3.1.4</span></code> Install a package by exact version number.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&quot;PKGNAME[version='3.1.2|3.1.4']&quot;</span></code> Install one of the listed versions (OR).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">&quot;PKGNAME&gt;2.5,&lt;3.2&quot;</span></code> Install following several constraints (AND).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">--yes</span> <span class="pre">PKG1</span> <span class="pre">PKG2</span></code> Run most commands without requiring a user prompt.</p></li>
+</ul>
+<p>conda list</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span></code> List all packages and versions in the active environment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-n</span> <span class="pre">ENVNAME</span></code> List all packages and versions in environment <code class="docutils literal notranslate"><span class="pre">ENVNAME</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">--revisions</span></code> List all revisions made within the active environment.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">-n</span> <span class="pre">ENVNAME</span> <span class="pre">--revisions</span></code> List all revisions made within environment <code class="docutils literal notranslate"><span class="pre">ENVNAME</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">--explicit</span> <span class="pre">&gt;</span> <span class="pre">pkgs.txt</span></code> Create an environment based on exact package versions.</p></li>
+</ul>
+<p>conda remove</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">remove</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span> <span class="pre">--all</span></code> Delete an entire environment.</p></li>
+</ul>
+<p>conda search</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">search</span> <span class="pre">PKGNAME</span> <span class="pre">--info</span></code> Detailed information about package versions.</p></li>
+</ul>
+<p>conda uninstall</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">uninstall</span> <span class="pre">PKGNAME</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span></code> Remove a package from an environment.</p></li>
+</ul>
+<p>conda update</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">-h</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">conda</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">-n</span> <span class="pre">base</span> <span class="pre">conda</span></code> Update conda to the current version.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">anaconda</span></code> Update all packages to the latest version of Anaconda.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">update</span> <span class="pre">--all</span> <span class="pre">--name</span> <span class="pre">ENVNAME</span></code> Update all packages within an environment.</p></li>
+</ul>
+<p>anaconda</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">anaconda</span> <span class="pre">search</span> <span class="pre">NAME</span></code> Find a package on all channels using the Anaconda client.</p></li>
+</ul>
+</section>
+<section id="config">
+<h2>Config<a class="headerlink" href="#config" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">~/.anaconda</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~/.conda</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~/.condarc</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">~/.continuum</span></code></p></li>
+</ul>
+<p>A PyViz environment</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">create</span> <span class="pre">-n</span> <span class="pre">pyvizenv</span> <span class="pre">python=3.7</span> <span class="pre">anaconda</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">python-dotenv</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">anaconda</span> <span class="pre">nb_conda</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">nodejs=12</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">pyviz</span> <span class="pre">holoviz</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">plotly</span> <span class="pre">plotly</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">install</span> <span class="pre">-c</span> <span class="pre">conda-forge</span> <span class="pre">jupyterlab=2.2</span> <span class="pre">-y</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">numpy==1.19</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">matplotlib==3.0.3</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">export</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=--max-old-space-size=4096</span></code> (Windows)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;jupyter-widgets/jupyterlab-manager</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">jupyterlab-plotly</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">plotlywidget</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">labextension</span> <span class="pre">install</span> <span class="pre">&#64;pyviz/jupyterlab_pyviz</span> <span class="pre">--no-build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">jupyter</span> <span class="pre">lab</span> <span class="pre">build</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">unset</span> <span class="pre">NODE_OPTIONS</span></code> (macOS)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">set</span> <span class="pre">NODE_OPTIONS=</span></code> (Windows)</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">nodejs</span>     <span class="mf">12.0.0</span>
+<span class="n">holoviz</span>    <span class="mf">0.11.3</span>
+<span class="n">hvplot</span>     <span class="mf">0.7.1</span>
+<span class="n">panel</span>      <span class="mf">0.10.3</span>
+<span class="n">plotly</span>     <span class="mf">4.14.3</span>
+<span class="n">numpy</span>      <span class="mf">1.19</span>
+<span class="n">matplotlib</span> <span class="mf">3.0.3</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./python/Anaconda"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../Pip/pip.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">pip Package Installer for Python</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../Jupyter/jupyter.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Jupyter</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dave Friedman<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
   </body>
 </html>
