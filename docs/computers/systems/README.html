@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Systems 101 &#8212; Laptop Library</title>
+    <title>Table of Contents &#8212; Laptop Library</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Distributed Systems" href="distributedsystems.html" />
-    <link rel="prev" title="Table of Contents" href="README.html" />
+    <link rel="next" title="Systems 101" href="systems.html" />
+    <link rel="prev" title="Theory of Computation" href="../theoryofcomputation.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -133,7 +133,7 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="../README.html">
-   Computation
+   Computers
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
@@ -147,7 +147,7 @@ const thebe_selector_output = ".output, .cell_output"
     </a>
    </li>
    <li class="toctree-l2 current active has-children">
-    <a class="reference internal" href="README.html">
+    <a class="current reference internal" href="#">
      Systems
     </a>
     <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
@@ -155,9 +155,9 @@ const thebe_selector_output = ".output, .cell_output"
      <i class="fas fa-chevron-down">
      </i>
     </label>
-    <ul class="current">
-     <li class="toctree-l3 current active">
-      <a class="current reference internal" href="#">
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="systems.html">
        Computer Systems
       </a>
      </li>
@@ -169,8 +169,18 @@ const thebe_selector_output = ".output, .cell_output"
     </ul>
    </li>
    <li class="toctree-l2">
+    <a class="reference internal" href="../wireless.html">
+     Wireless
+    </a>
+   </li>
+   <li class="toctree-l2">
     <a class="reference internal" href="../ComputerSecurity/README.html">
      Computer Security
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../computerinterfaces.html">
+     Interfaces
     </a>
    </li>
   </ul>
@@ -431,16 +441,6 @@ const thebe_selector_output = ".output, .cell_output"
      </li>
     </ul>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../web.html">
-     Web
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../cloud.html">
-     Cloud
-    </a>
-   </li>
    <li class="toctree-l2 has-children">
     <a class="reference internal" href="../../platforms/platforms.html">
      Platforms
@@ -550,7 +550,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/computation/systems/systems.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/computers/systems/README.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -588,19 +588,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -608,122 +595,23 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Systems 101</h1>
+                <h1>Table of Contents</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#terms">
-   Terms
-  </a>
- </li>
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="systems-101">
-<h1>Systems 101<a class="headerlink" href="#systems-101" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="terms">
-<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Adapter Pattern <a class="reference external" href="https://en.wikipedia.org/wiki/Adapter_pattern">Wiki</a></p></li>
-<li><p>Address Space <a class="reference external" href="https://en.wikipedia.org/wiki/Address_space">Wiki</a></p></li>
-<li><p>ACPI Advanced Configuration and Power Interface <a class="reference external" href="https://en.wikipedia.org/wiki/Advanced_Configuration_and_Power_Interface">Wiki</a></p></li>
-<li><p>Anonymous Pipe <a class="reference external" href="https://en.wikipedia.org/wiki/Anonymous_pipe">Wiki</a></p></li>
-<li><p>Background Process <a class="reference external" href="https://en.wikipedia.org/wiki/Background_process">Wiki</a></p></li>
-<li><p>Batch Processing <a class="reference external" href="https://en.wikipedia.org/wiki/Batch_processing">Wiki</a></p></li>
-<li><p>Binary File <a class="reference external" href="https://en.wikipedia.org/wiki/Binary_file">Wiki</a></p></li>
-<li><p>Boot <a class="reference external" href="https://en.wikipedia.org/wiki/Booting">Wiki</a></p></li>
-<li><p>Bootloader <a class="reference external" href="https://en.wikipedia.org/wiki/Bootloader">Wiki</a></p></li>
-<li><p>Call Stack <a class="reference external" href="https://en.wikipedia.org/wiki/Call_stack">Wiki</a></p></li>
-<li><p>Child Process <a class="reference external" href="https://en.wikipedia.org/wiki/Child_process">Wiki</a></p></li>
-<li><p>Core Dump <a class="reference external" href="https://en.wikipedia.org/wiki/Core_dump">Wiki</a></p></li>
-<li><p>Context Switch <a class="reference external" href="https://en.wikipedia.org/wiki/Context_switch">Wiki</a></p></li>
-<li><p>Crash <a class="reference external" href="https://en.wikipedia.org/wiki/Crash_(computing)">Wiki</a></p></li>
-<li><p>Crash Reporter <a class="reference external" href="https://en.wikipedia.org/wiki/Crash_reporter">Wiki</a></p></li>
-<li><p>Daemon <a class="reference external" href="https://en.wikipedia.org/wiki/Daemon_(computing)">Wiki</a></p></li>
-<li><p>Device File <a class="reference external" href="https://en.wikipedia.org/wiki/Device_file">Wiki</a></p></li>
-<li><p>DOS Disk Operating System <a class="reference external" href="https://en.wikipedia.org/wiki/Disk_operating_system">Wiki</a></p></li>
-<li><p>Disk Partitioning <a class="reference external" href="https://en.wikipedia.org/wiki/Disk_partitioning">Wiki</a></p></li>
-<li><p>DOS <a class="reference external" href="https://en.wikipedia.org/wiki/DOS">Wiki</a></p></li>
-<li><p>Exit <a class="reference external" href="https://en.wikipedia.org/wiki/Exit_(system_call)">Wiki</a></p></li>
-<li><p>Exit Status <a class="reference external" href="https://en.wikipedia.org/wiki/Exit_status">Wiki</a></p></li>
-<li><p>Fatal System Error <a class="reference external" href="https://en.wikipedia.org/wiki/Fatal_system_error">Wiki</a></p></li>
-<li><p>FDIR Fault Detection, Isolation, and Recovery <a class="reference external" href="https://en.wikipedia.org/wiki/Fault_detection_and_isolation">Wiki</a></p></li>
-<li><p>File Descriptor <a class="reference external" href="https://en.wikipedia.org/wiki/File_descriptor">Wiki</a></p></li>
-<li><p>File System Permissions <a class="reference external" href="https://en.wikipedia.org/wiki/File-system_permissions">Wiki</a></p></li>
-<li><p>FIFO First In First Out <a class="reference external" href="https://en.wikipedia.org/wiki/FIFO_(computing_and_electronics)">Wiki</a></p></li>
-<li><p>Flow <a class="reference external" href="https://en.wikipedia.org/wiki/Traffic_flow_(computer_networking)">Wiki</a></p></li>
-<li><p>Fork <a class="reference external" href="https://en.wikipedia.org/wiki/Fork_(system_call)">Wiki</a></p></li>
-<li><p>Handle <a class="reference external" href="https://en.wikipedia.org/wiki/Handle_(computing)">Wiki</a></p></li>
-<li><p>Hibernation <a class="reference external" href="https://en.wikipedia.org/wiki/Hibernation_(computing)">Wiki</a></p></li>
-<li><p>IPC Inter Process Communication <a class="reference external" href="https://en.wikipedia.org/wiki/Inter-process_communication">Wiki</a></p></li>
-<li><p>Interrupt <a class="reference external" href="https://en.wikipedia.org/wiki/Interrupt">Wiki</a></p></li>
-<li><p>Job Control <a class="reference external" href="https://en.wikipedia.org/wiki/Job_control_(Unix)">Wiki</a></p></li>
-<li><p>Kernel <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_(operating_system)">Wiki</a></p></li>
-<li><p>Kernel Panic <a class="reference external" href="https://en.wikipedia.org/wiki/Kernel_panic">Wiki</a></p></li>
-<li><p>Kernel Space <a class="reference external" href="https://en.wikipedia.org/wiki/User_space_and_kernel_space">Wiki</a></p></li>
-<li><p>LIFO Last In First Out <a class="reference external" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Wiki</a></p></li>
-<li><p>Login Session <a class="reference external" href="https://en.wikipedia.org/wiki/Login_session">Wiki</a></p></li>
-<li><p>Magic Number <a class="reference external" href="https://en.wikipedia.org/wiki/Magic_number_(programming)">Wiki</a></p></li>
-<li><p>Memory Segmentation <a class="reference external" href="https://en.wikipedia.org/wiki/Memory_segmentation">Wiki</a></p></li>
-<li><p>Mounting <a class="reference external" href="https://en.wikipedia.org/wiki/Mount_(computing)">Wiki</a></p></li>
-<li><p>Multitasking <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_multitasking">Wiki</a></p></li>
-<li><p>Named Pipe <a class="reference external" href="https://en.wikipedia.org/wiki/Named_pipe">Wiki</a></p></li>
-<li><p>Network Socket <a class="reference external" href="https://en.wikipedia.org/wiki/Network_socket">Wiki</a></p></li>
-<li><p>OS Operating System <a class="reference external" href="https://en.wikipedia.org/wiki/Operating_system">Wiki</a></p></li>
-<li><p>Orphan Process <a class="reference external" href="https://en.wikipedia.org/wiki/Orphan_process">Wiki</a></p></li>
-<li><p>Page <a class="reference external" href="https://en.wikipedia.org/wiki/Page_(computer_memory)">Wiki</a></p></li>
-<li><p>Page Table <a class="reference external" href="https://en.wikipedia.org/wiki/Page_table">Wiki</a></p></li>
-<li><p>Parent Process <a class="reference external" href="https://en.wikipedia.org/wiki/Parent_process">Wiki</a></p></li>
-<li><p>Pipe <a class="reference external" href="https://en.wikipedia.org/wiki/Pipeline_(Unix)">Wiki</a></p></li>
-<li><p>POSIX Portable Operating System Interface <a class="reference external" href="https://en.wikipedia.org/wiki/POSIX">Wiki</a></p></li>
-<li><p>Power Management <a class="reference external" href="https://en.wikipedia.org/wiki/Power_management">Wiki</a></p></li>
-<li><p>Process <a class="reference external" href="https://en.wikipedia.org/wiki/Process_(computing)">Wiki</a></p></li>
-<li><p>PCB Process Control Block <a class="reference external" href="https://en.wikipedia.org/wiki/Process_control_block">Wiki</a></p></li>
-<li><p>Process Group <a class="reference external" href="https://en.wikipedia.org/wiki/Process_group">Wiki</a></p></li>
-<li><p>PID Process Identifier <a class="reference external" href="https://en.wikipedia.org/wiki/Process_identifier">Wiki</a></p></li>
-<li><p>Protection Ring <a class="reference external" href="https://en.wikipedia.org/wiki/Protection_ring">Wiki</a></p></li>
-<li><p>Queueing Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Queueing_theory">Wiki</a></p></li>
-<li><p>Reboot <a class="reference external" href="https://en.wikipedia.org/wiki/Reboot">Wiki</a></p></li>
-<li><p>Redirection <a class="reference external" href="https://en.wikipedia.org/wiki/Redirection_(computing)">Wiki</a></p></li>
-<li><p>Scheduling <a class="reference external" href="https://en.wikipedia.org/wiki/Scheduling_(computing)">Wiki</a></p></li>
-<li><p>Segmentation Fault <a class="reference external" href="https://en.wikipedia.org/wiki/Segmentation_fault">Wiki</a></p></li>
-<li><p>Service Wrapper <a class="reference external" href="https://en.wikipedia.org/wiki/Service_wrapper">Wiki</a></p></li>
-<li><p>Shared Resource <a class="reference external" href="https://en.wikipedia.org/wiki/Shared_resource">Wiki</a></p></li>
-<li><p>Shell <a class="reference external" href="https://en.wikipedia.org/wiki/Shell_(computing)">Wiki</a></p></li>
-<li><p>Signal <a class="reference external" href="https://en.wikipedia.org/wiki/Signal_(IPC)">Wiki</a></p></li>
-<li><p>Sleep <a class="reference external" href="https://en.wikipedia.org/wiki/Sleep_mode">Wiki</a></p></li>
-<li><p>Spawn <a class="reference external" href="https://en.wikipedia.org/wiki/Spawn_(computing)">Wiki</a></p></li>
-<li><p>Stack <a class="reference external" href="https://en.wikipedia.org/wiki/Stack_(abstract_data_type)">Wiki</a></p></li>
-<li><p>Stack Trace <a class="reference external" href="https://en.wikipedia.org/wiki/Stack_trace">Wiki</a></p></li>
-<li><p>stderr Standard Error <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_streams#Standard_error_(stderr)">Wiki</a></p></li>
-<li><p>stdin Standard Input <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_streams#Standard_input_(stdin)">Wiki</a></p></li>
-<li><p>stdout Standard Output <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_streams#Standard_output_(stdout)">Wiki</a></p></li>
-<li><p>Standard Strean <a class="reference external" href="https://en.wikipedia.org/wiki/Standard_streams">Wiki</a></p></li>
-<li><p>System Call <a class="reference external" href="https://en.wikipedia.org/wiki/System_call">Wiki</a></p></li>
-<li><p>Systems Theory <a class="reference external" href="https://en.wikipedia.org/wiki/Systems_theory">Wiki</a></p></li>
-<li><p>Thread <a class="reference external" href="https://en.wikipedia.org/wiki/Thread_(computing)">Wiki</a></p></li>
-<li><p>TLB Translation Lookaside Buffer <a class="reference external" href="https://en.wikipedia.org/wiki/Translation_lookaside_buffer">Wiki</a></p></li>
-<li><p>Unix Philosophy <a class="reference external" href="https://en.wikipedia.org/wiki/Unix_philosophy">Wiki</a></p></li>
-<li><p>Unix-like <a class="reference external" href="https://en.wikipedia.org/wiki/Unix-like">Wiki</a></p></li>
-<li><p>User Space <a class="reference external" href="https://en.wikipedia.org/wiki/User_space_and_kernel_space">Wiki</a></p></li>
-<li><p>VFS Virtual File System <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_file_system">Wiki</a></p></li>
-<li><p>Virtual Memory <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_memory">Wiki</a></p></li>
-<li><p>Wait <a class="reference external" href="https://en.wikipedia.org/wiki/Wait_(system_call)">Wiki</a></p></li>
-<li><p>Windows <a class="reference external" href="https://en.wikipedia.org/wiki/Microsoft_Windows">Wiki</a></p></li>
-<li><p>Zombie Process <a class="reference external" href="https://en.wikipedia.org/wiki/Zombie_process">Wiki</a></p></li>
+  <div class="tex2jax_ignore mathjax_ignore section" id="table-of-contents">
+<h1>Table of Contents<a class="headerlink" href="#table-of-contents" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="systems.html">Computer Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="distributedsystems.html">Distributed Systems</a></li>
 </ul>
 </div>
 </div>
@@ -741,7 +629,7 @@ const thebe_selector_output = ".output, .cell_output"
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./computation/systems"
+            path: "./computers/systems"
         },
         predefinedOutput: true
     }
@@ -753,17 +641,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="README.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="../theoryofcomputation.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Table of Contents</p>
+            <p class="prev-next-title">Theory of Computation</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="distributedsystems.html" title="next page">
+    <a class='right-next' id="next-link" href="systems.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Distributed Systems</p>
+        <p class="prev-next-title">Systems 101</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
