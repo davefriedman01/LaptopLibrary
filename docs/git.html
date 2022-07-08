@@ -1,0 +1,1066 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Git &amp; Version Control &#8212; Laptop Library</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/git.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Java &amp; Scala" href="javascala.html" />
+    <link rel="prev" title="File System 101" href="filesystem101.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Laptop Library</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Table of Contents
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ArtificialIntelligence/README.html">
+   Artificial Intelligence
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/MachineLearning/README.html">
+     Statistical and Machine Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/DeepLearning/README.html">
+     Deep Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/ReinforcementLearning/README.html">
+     Reinforcement Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/ComputerVision/README.html">
+     Computer Vision
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Biology/README.html">
+   Biology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="financeeconomicsaccounting.html">
+   Finance, Economics, &amp; Accounting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="information.html">
+   Information
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="informationretrieval.html">
+   Information Retrieval
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logic.html">
+   Logic
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="philosophy.html">
+   Philosophy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="physics.html">
+   Physics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="poetry.html">
+   Poetry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="retrogaming.html">
+   Retro Gaming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="virtualreality.html">
+   Virtual Reality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diy.html">
+   DIY
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="anaconda.html">
+   Anaconda
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="aws.html">
+   AWS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bigdata.html">
+   Big Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="encoding.html">
+   Character Encoding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud.html">
+   The Cloud
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="commandlinetools.html">
+   Command Line Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="computers101.html">
+   Computers 101
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data.html">
+   Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dataviz.html">
+   Data Visualization
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="database.html">
+   Databases
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="documentation.html">
+   Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elk.html">
+   Elastic Stack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="filesystem101.html">
+   File System 101
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="javascala.html">
+   Java &amp; Scala
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="javascript.html">
+   JavaScript
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jsonyaml.html">
+   JSON &amp; YAML
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter.html">
+   Jupyter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="macOS.html">
+   macOS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="math.html">
+   Mathematics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mongodb.html">
+   MongoDB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="postgres.html">
+   PostgreSQL &amp; pgAdmin
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="programming101.html">
+   Programming 101
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="pythonecosystem/README.html">
+   Python Ecosystem
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pythonecosystem/resources.html">
+     Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pythonecosystem/pip.html">
+     Pip
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rlang.html">
+   R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="scientificcomputing.html">
+   Scientific &amp; Numerical Computing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="shell.html">
+   The Shell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="software.html">
+   Software Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sql.html">
+   SQL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ssh.html">
+   SSH
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="texteditors/README.html">
+   Text Editors &amp; IDEs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="texteditors/vim.html">
+     Vim
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="texteditors/vscode.html">
+     VS Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="web.html">
+   The Web
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="windows.html">
+   Windows
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/git.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github">
+   GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-lfs">
+   Git LFS
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commands">
+   Commands
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Git
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-cli">
+     GitHub CLI
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-br">
+     GitHub
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gitlab-br">
+     GitLab
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-br">
+     Git
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vc-version-control-br">
+     VC Version Control
+     <br/>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Git & Version Control</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git">
+   Git
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#github">
+   GitHub
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#git-lfs">
+   Git LFS
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#resources">
+   Resources
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#commands">
+   Commands
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id1">
+     Git
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-cli">
+     GitHub CLI
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#github-br">
+     GitHub
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#gitlab-br">
+     GitLab
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#git-br">
+     Git
+     <br/>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vc-version-control-br">
+     VC Version Control
+     <br/>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="git-version-control">
+<h1>Git &amp; Version Control<a class="headerlink" href="#git-version-control" title="Permalink to this headline">#</a></h1>
+<section id="git">
+<h2>Git<a class="headerlink" href="#git" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://git-scm.com/doc">Docs</a></p>
+<ul>
+<li><p><a class="reference external" href="https://git-scm.com/docs/gitattributes">gitattributes</a></p></li>
+<li><p>gitignore</p></li>
+</ul>
+</li>
+</ul>
+<p>Configuration file.</p>
+<p><code class="docutils literal notranslate"><span class="pre">~/.gitconfig</span></code></p>
+</section>
+<section id="github">
+<h2>GitHub<a class="headerlink" href="#github" title="Permalink to this headline">#</a></h2>
+<p>GitHub</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://github.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/">Docs</a></p>
+<ul>
+<li><p>Get Started <a class="reference external" href="https://docs.github.com/en/get-started">Docs</a></p>
+<ul>
+<li><p>Quickstart <a class="reference external" href="https://docs.github.com/en/get-started/quickstart">Docs</a></p></li>
+</ul>
+</li>
+<li><p>Authentication <a class="reference external" href="https://docs.github.com/en/authentication">Docs</a></p></li>
+<li><p>Security <a class="reference external" href="https://docs.github.com/en/code-security">Docs</a></p></li>
+</ul>
+</li>
+</ul>
+<p>GitHub CLI</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://cli.github.com/">Home</a></p></li>
+<li><p><a class="reference external" href="https://cli.github.com/manual/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cli/cli">GitHub</a></p></li>
+<li><p><a class="reference external" href="https://github.com/cli/cli/issues">GitHub Issue Tracker</a></p></li>
+</ul>
+</section>
+<section id="git-lfs">
+<h2>Git LFS<a class="headerlink" href="#git-lfs" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-lfs.github.com">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.github.com/en/repositories/working-with-files/managing-large-files">GitHub</a></p></li>
+</ul>
+</section>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
+<p>Texts</p>
+<ul class="simple">
+<li><p>Ponuthorai, Prem Kumar &amp; Jon Loeliger. (2022). <em>Version Control with Git: Powerful Tools and Techniques for Collaborative Software Development</em>. O’Reilly.</p></li>
+<li><p>Silverman, Richard E. (2013). <em>Git Pocket Guide: A Working Introduction</em>. O’Reilly.</p></li>
+</ul>
+<p>YouTube</p>
+<ul class="simple">
+<li><p>freeCodeCamp. “Git for Professionals Tutorial - Tools &amp; Concepts for Mastering Version Control with Git”. <a class="reference external" href="https://www.youtube.com/watch?v=Uszj_k0DGsg">Sep 30, 2021</a>.</p></li>
+<li><p>freeCodeCamp. “Git and GitHub for Beginners - Crash Course”. <a class="reference external" href="https://www.youtube.com/watch?v=RGOj5yH7evk">May 28, 2020</a>.</p></li>
+<li><p>Mr. P Solver. “A Git Tutorial Based On Examples (Code Along!)”. <a class="reference external" href="https://www.youtube.com/watch?v=wPq-okUgiUU">May 16, 2022</a>.</p></li>
+</ul>
+<p>MIT Missing Semester: Version Control</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://missing.csail.mit.edu/2020/version-control/">2020</a></p></li>
+<li><p><a class="reference external" href="https://missing.csail.mit.edu/2019/version-control/">2019</a></p></li>
+</ul>
+</section>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Distributed Version Control <a class="reference external" href="https://en.wikipedia.org/wiki/Distributed_version_control">Wiki</a></p></li>
+<li><p>Git <a class="reference external" href="https://en.wikipedia.org/wiki/Git">Wiki</a></p></li>
+<li><p>Version Control <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">Wiki</a></p></li>
+</ul>
+</section>
+<section id="commands">
+<h2>Commands<a class="headerlink" href="#commands" title="Permalink to this headline">#</a></h2>
+<section id="id1">
+<h3>Git<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
+<p>git branch</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-M</span> <span class="pre">main</span></code> Rename the current branch to <code class="docutils literal notranslate"><span class="pre">main</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-av</span></code> View all local and remote branches.</p></li>
+</ul>
+</li>
+</ul>
+<p>git checkout</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">checkout</span></code></p></li>
+</ul>
+<p>git config</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span></code>?</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">-l</span></code> List the variable-value pairs in config file <code class="docutils literal notranslate"><span class="pre">~/.gitconfig</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.name</span> <span class="pre">myUsername</span></code> Set the commit name to <code class="docutils literal notranslate"><span class="pre">myUsername</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">user.email</span> <span class="pre">&quot;myEmail&#64;example.com&quot;</span></code> Set the commit email address to <code class="docutils literal notranslate"><span class="pre">myEmail&#64;example.com</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--global</span> <span class="pre">init.defaultBranch</span> <span class="pre">main</span></code> Set the default branch name to <code class="docutils literal notranslate"><span class="pre">main</span></code> for new repos.</p></li>
+</ul>
+</li>
+</ul>
+<p>git diff</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">diff</span></code></p></li>
+</ul>
+<p>git fetch</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">fetch</span></code></p></li>
+</ul>
+<p>git merge</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">merge</span></code></p></li>
+</ul>
+<p>git log</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">log</span> <span class="pre">--pretty=format:</span> <span class="pre">--name-only</span> <span class="pre">--all</span> <span class="pre">|</span> <span class="pre">sort</span> <span class="pre">-u</span> <span class="pre">|</span> <span class="pre">sed</span> <span class="pre">'/^$/d'</span></code> List tracked files (unverified).</p></li>
+</ul>
+<p>git ls-files</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ls-files</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ls-files</span></code>?</p></li>
+</ul>
+<p>git ls-tree</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ls-tree</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ls-tree</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">ls-tree</span> <span class="pre">--full-tree</span> <span class="pre">--name-only</span> <span class="pre">-r</span> <span class="pre">HEAD</span></code> List currently-tracked files.</p></li>
+</ul>
+<p>git pull</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://git-scm.com/docs/git-pull">Docs</a></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">pull</span> <span class="pre">--rebase</span></code></p></li>
+</ul>
+<p>git rebase</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rebase</span></code></p></li>
+</ul>
+<p>git reflog</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reflog</span></code></p></li>
+</ul>
+<p>git remote</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">-v</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">get-url</span> <span class="pre">--all</span> <span class="pre">origin</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">origin</span> <span class="pre">git&#64;github.com:myGitHubUsername/myRepo.git</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>git reset</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--soft</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--hard</span> <span class="pre">HEAD^</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">reset</span> <span class="pre">--hard</span> <span class="pre">HEAD~2</span></code></p></li>
+</ul>
+</li>
+</ul>
+<p>git restore</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">restore</span></code></p></li>
+</ul>
+<p>git rm</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">rm</span> <span class="pre">--cached</span></code></p></li>
+</ul>
+<p>git stash</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">stash</span></code></p></li>
+</ul>
+<p>git status</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span> <span class="pre">-u</span></code></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="github-cli">
+<h3>GitHub CLI<a class="headerlink" href="#github-cli" title="Permalink to this headline">#</a></h3>
+<p>gh</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span></code>?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">--version</span></code> What is the gh version?</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">auth</span> <span class="pre">login</span></code> Authenticate gh and git with GitHub.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">ssh-key</span> <span class="pre">list</span></code> Which SSH keys are registered with my GitHub account?</p></li>
+</ul>
+<p>gh browse</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">browse</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">browse</span></code>?</p></li>
+</ul>
+<p>gh repo</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span></code>?</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">repo</span> <span class="pre">list</span></code> Which repos do I own?</p></li>
+</ul>
+</li>
+</ul>
+<p>gh config</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span> <span class="pre">--help</span></code> How do I use command <code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span></code>?</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">gh</span> <span class="pre">config</span> <span class="pre">list</span></code> Print a list of configuration keys and values.</p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="github-br">
+<h3>GitHub<br><a class="headerlink" href="#github-br" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>GitHub <a class="reference external" href="https://github.com">Home</a><br></p></li>
+<li><p>GitHub <a class="reference external" href="https://docs.github.com/en">Docs</a><br></p></li>
+<li><p>GitHub <a class="reference external" href="https://github.com/git-guides/">Git Guide</a><br></p></li>
+<li><p>GitHub <a class="reference external" href="https://lab.github.com">Learning Lab</a><br></p>
+<ul>
+<li><p>GitHub <a class="reference external" href="https://lab.github.com/githubtraining/introduction-to-github">Learning Lab: Introduction to GitHub</a><br></p></li>
+</ul>
+</li>
+<li><p>GitHub <a class="reference external" href="https://training.github.com/downloads/github-git-cheat-sheet/">Cheatsheet</a><br></p></li>
+<li><p>GitHub <a class="reference external" href="https://www.youtube.com/channel/UC7c3Kb6jYCRj4JOHHZTxKsQ">YouTube</a></p></li>
+<li><p>GitHub Training &amp; Guides <a class="reference external" href="https://www.youtube.com/channel/UCP7RrmoueENv9TZts3HXXtw">YouTube</a><br></p>
+<ul>
+<li><p>GitHub Training &amp; Guides <a class="reference external" href="https://www.youtube.com/watch?v=uLR1RNqJ1Mw">Git LFS Large File Storage</a><br></p></li>
+</ul>
+</li>
+<li><p>GitHub <a class="reference external" href="https://en.wikipedia.org/wiki/GitHub">Wiki</a><br></p></li>
+<li><p>GitHub Pages <a class="reference external" href="https://pages.github.com">Home</a><br></p></li>
+</ul>
+<details><summary>YouTube Talks, Tutorials, etc.</summary><br>
+<ul class="simple">
+<li><p>“Git &amp; GitHub Crash Course For Beginners”. (2017). Traversy Media. <a class="reference external" href="https://www.youtube.com/watch?v=SWYqp7iY_Tc">YouTube</a>.<br></p></li>
+<li><p>“Git and GitHub for Beginners - Crash Course”. (2020). <a class="reference external" href="http://freeCodeCamp.org">freeCodeCamp.org</a>. <a class="reference external" href="https://www.youtube.com/watch?v=RGOj5yH7evk">YouTube</a>.<br></p></li>
+</ul>
+</details>
+</section>
+<section id="gitlab-br">
+<h3>GitLab<br><a class="headerlink" href="#gitlab-br" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>GitLab <a class="reference external" href="https://about.gitlab.com">Home</a><br></p></li>
+<li><p>GitLab <a class="reference external" href="https://docs.gitlab.com">Docs</a><br></p>
+<ul>
+<li><p>GitLab and SSH Keys <a class="reference external" href="https://docs.gitlab.com/ee/ssh/README.html">Docs</a><br></p></li>
+</ul>
+</li>
+<li><p>GitLab <a class="reference external" href="https://en.wikipedia.org/wiki/GitLab">Wiki</a><br></p></li>
+</ul>
+</section>
+<section id="git-br">
+<h3>Git<br><a class="headerlink" href="#git-br" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Git <a class="reference external" href="https://git-scm.com">Home</a><br></p></li>
+<li><p>Git <a class="reference external" href="https://git-scm.com/doc">Docs</a><br></p></li>
+<li><p>Git <a class="reference external" href="https://en.wikipedia.org/wiki/Git">Wiki</a><br></p></li>
+<li><p>Chacon, Scott &amp; Ben Straub. (2014). <a class="reference external" href="https://git-scm.com/book/en/v2"><em>Pro Git: Everything You Need to Know About Git, 2nd Ed</em></a>. Apress.<br></p></li>
+</ul>
+<details><summary>Git CL</summary><br>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">--version</span></code> Verify that git is successfully installed on your system<br></p>
+<p><strong>Run this command when you want to update your GitHub repo:<br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;your</span> <span class="pre">commit</span> <span class="pre">message&quot;</span> <span class="pre">&amp;&amp;</span> <span class="pre">git</span> <span class="pre">push</span></code><br>
+or separately:<br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">.</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;your</span> <span class="pre">commit</span> <span class="pre">message&quot;</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span></code><br></strong></p>
+<p>Check the status of files and folders in your local project directory (i.e., tracked or no, added or no, committed or no, pushed or no, etc.):<br>
+<a class="reference external" href="https://git-scm.com/docs/git-status"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">status</span></code></a><br></p>
+<p>Run this set of commands the first time you connect your local project directory to your new GitHub repo:<br>
+<code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">&quot;#</span> <span class="pre">Your</span> <span class="pre">Repo</span> <span class="pre">Name</span> <span class="pre">and</span> <span class="pre">Description,</span> <span class="pre">For</span> <span class="pre">Example&quot;</span> <span class="pre">&gt;&gt;</span> <span class="pre">README.md</span></code><br>
+<a class="reference external" href="https://git-scm.com/docs/git-init"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">init</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-add"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span> <span class="pre">README.md</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-commit"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">commit</span> <span class="pre">-m</span> <span class="pre">&quot;your</span> <span class="pre">commit</span> <span class="pre">message&quot;</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-branch"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">branch</span> <span class="pre">-M</span> <span class="pre">main</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emaddem"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add</span> <span class="pre">origin</span> <span class="pre">git&#64;github.com:&lt;github-username&gt;/&lt;github-repo-name&gt;.git</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-push"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">push</span> <span class="pre">-u</span> <span class="pre">origin</span> <span class="pre">main</span></code></a><br></p>
+<p><a class="reference external" href="https://git-scm.com/docs/git-remote"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span></code></a> Gets the local name you assigned to your remote GitHub repo when you ran <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">add...</span></code> (typically, <code class="docutils literal notranslate"><span class="pre">origin</span></code>)<br>
+<a class="reference external" href="https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emget-urlem"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">get-url</span> <span class="pre">origin</span></code></a><br>
+<a class="reference external" href="https://git-scm.com/docs/git-remote#Documentation/git-remote.txt-emset-urlem"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">remote</span> <span class="pre">set-url</span> <span class="pre">origin</span> <span class="pre">git&#64;github.com:&lt;github-username&gt;/&lt;github-repo-name&gt;.git</span></code></a> This is useful when you change the name of your GitHub repo and you also need to change its name in your local configuration to maintain a connection<br></p>
+<p><a class="reference external" href="https://www.git-scm.com/docs/git-clone"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span> <span class="pre">&lt;url&gt;</span></code></a><br></p>
+<p><a class="reference external" href="https://git-scm.com/docs/git-config#Documentation/git-config.txt--l"><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">-l</span></code> or <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">config</span> <span class="pre">--list</span></code></a><br></p>
+<p><code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">version</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">track</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">ls-files</span></code><br>
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">lfs</span> <span class="pre">clone</span> <span class="pre">--depth=1</span> <span class="pre">https://github.com/&lt;github-username&gt;/&lt;github-repo-name&gt;.git</span></code><br></p>
+</details>
+<details><summary>YouTube Talks, Tutorials, etc.</summary><br>
+<ul class="simple">
+<li><p>“Git Tutorial for Beginners: Command-Line Fundamentals”. (2015). Corey Schafer. <a class="reference external" href="https://www.youtube.com/watch?v=HVsySz-h9r4">YouTube</a>.<br></p></li>
+</ul>
+</details>
+</section>
+<section id="vc-version-control-br">
+<h3>VC Version Control<br><a class="headerlink" href="#vc-version-control-br" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>VC <a class="reference external" href="https://en.wikipedia.org/wiki/Version_control">Wiki</a><br></p></li>
+<li><p>VC <a class="reference external" href="https://missing.csail.mit.edu/2020/version-control/">MIT’s Missing Semester</a><br></p></li>
+</ul>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="filesystem101.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">File System 101</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="javascala.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Java &amp; Scala</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dave Friedman<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

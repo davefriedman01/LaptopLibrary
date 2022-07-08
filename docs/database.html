@@ -1,0 +1,721 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Database &#8212; Laptop Library</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=62ba249389abaaa9ffc34bf36a076bdc1d65ee18" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=f31d14ad54b65d19161ba51d4ffff3a77ae00456"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/database.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Documentation" href="documentation.html" />
+    <link rel="prev" title="DataViz" href="dataviz.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Laptop Library</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="index.html">
+                    Table of Contents
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="ArtificialIntelligence/README.html">
+   Artificial Intelligence
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/MachineLearning/README.html">
+     Statistical and Machine Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/DeepLearning/README.html">
+     Deep Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/ReinforcementLearning/README.html">
+     Reinforcement Learning
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="ArtificialIntelligence/ComputerVision/README.html">
+     Computer Vision
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Biology/README.html">
+   Biology
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="financeeconomicsaccounting.html">
+   Finance, Economics, &amp; Accounting
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="information.html">
+   Information
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="informationretrieval.html">
+   Information Retrieval
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="logic.html">
+   Logic
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="philosophy.html">
+   Philosophy
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="physics.html">
+   Physics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="poetry.html">
+   Poetry
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="retrogaming.html">
+   Retro Gaming
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="virtualreality.html">
+   Virtual Reality
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="diy.html">
+   DIY
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="anaconda.html">
+   Anaconda
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="aws.html">
+   AWS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="bigdata.html">
+   Big Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="encoding.html">
+   Character Encoding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="cloud.html">
+   The Cloud
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="commandlinetools.html">
+   Command Line Tools
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="computers101.html">
+   Computers 101
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="data.html">
+   Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="dataviz.html">
+   Data Visualization
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Databases
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="documentation.html">
+   Documentation
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elk.html">
+   Elastic Stack
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="filesystem101.html">
+   File System 101
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="git.html">
+   Git
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="javascala.html">
+   Java &amp; Scala
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="javascript.html">
+   JavaScript
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jsonyaml.html">
+   JSON &amp; YAML
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="jupyter.html">
+   Jupyter
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="macOS.html">
+   macOS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="math.html">
+   Mathematics
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mongodb.html">
+   MongoDB
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="postgres.html">
+   PostgreSQL &amp; pgAdmin
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="programming101.html">
+   Programming 101
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="pythonecosystem/README.html">
+   Python Ecosystem
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pythonecosystem/resources.html">
+     Resources
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="pythonecosystem/pip.html">
+     Pip
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="rlang.html">
+   R
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="scientificcomputing.html">
+   Scientific &amp; Numerical Computing
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="shell.html">
+   The Shell
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="software.html">
+   Software Engineering
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="sql.html">
+   SQL
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ssh.html">
+   SSH
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="texteditors/README.html">
+   Text Editors &amp; IDEs
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="texteditors/vim.html">
+     Vim
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="texteditors/vscode.html">
+     VS Code
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="web.html">
+   The Web
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="windows.html">
+   Windows
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/database.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Database</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#figures">
+   Figures
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#terms">
+   Terms
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="database">
+<h1>Database<a class="headerlink" href="#database" title="Permalink to this headline">#</a></h1>
+<section id="figures">
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Codd, Edgar <a class="reference external" href="https://en.wikipedia.org/wiki/Edgar_F._Codd">Wiki</a></p></li>
+<li><p>Peirce, Charles Sanders <a class="reference external" href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce">Wiki</a></p></li>
+</ul>
+</section>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>ACID Atomicity, Consistency, Isolation, Durability <a class="reference external" href="https://en.wikipedia.org/wiki/ACID">Wiki</a></p></li>
+<li><p>Codd’s Theorem <a class="reference external" href="https://en.wikipedia.org/wiki/Codd%27s_theorem">Wiki</a></p></li>
+<li><p>Column <a class="reference external" href="https://en.wikipedia.org/wiki/Column_(database)">Wiki</a></p></li>
+<li><p>Column-Oriented DBMS <a class="reference external" href="https://en.wikipedia.org/wiki/Column-oriented_DBMS">Wiki</a></p></li>
+<li><p>Conceptual Data Model <a class="reference external" href="https://en.wikipedia.org/wiki/Conceptual_schema">Wiki</a></p></li>
+<li><p>CRUD Create, Read, Update, Delete <a class="reference external" href="https://en.wikipedia.org/wiki/Create,_read,_update_and_delete">Wiki</a></p></li>
+<li><p>Data Architecture <a class="reference external" href="https://en.wikipedia.org/wiki/Data_architecture">Wiki</a></p></li>
+<li><p>Data Cleaning <a class="reference external" href="https://en.wikipedia.org/wiki/Data_cleansing">Wiki</a></p></li>
+<li><p>Data Extraction <a class="reference external" href="https://en.wikipedia.org/wiki/Data_extraction">Wiki</a></p></li>
+<li><p>Data Integration <a class="reference external" href="https://en.wikipedia.org/wiki/Data_integration">Wiki</a></p></li>
+<li><p>Data Integrity <a class="reference external" href="https://en.wikipedia.org/wiki/Data_integrity">Wiki</a></p></li>
+<li><p>Data Lake <a class="reference external" href="https://en.wikipedia.org/wiki/Data_lake">Wiki</a></p></li>
+<li><p>Data Management <a class="reference external" href="https://en.wikipedia.org/wiki/Data_management">Wiki</a></p></li>
+<li><p>Data Migration <a class="reference external" href="https://en.wikipedia.org/wiki/Data_migration">Wiki</a></p></li>
+<li><p>Data Processing <a class="reference external" href="https://en.wikipedia.org/wiki/Data_processing">Wiki</a></p></li>
+<li><p>Data Redundancy <a class="reference external" href="https://en.wikipedia.org/wiki/Data_redundancy">Wiki</a></p></li>
+<li><p>Data Retrieval <a class="reference external" href="https://en.wikipedia.org/wiki/Data_retrieval">Wiki</a></p></li>
+<li><p>Data Storage <a class="reference external" href="https://en.wikipedia.org/wiki/Computer_data_storage">Wiki</a></p></li>
+<li><p>Data Transformation <a class="reference external" href="https://en.wikipedia.org/wiki/Data_transformation">Wiki</a></p></li>
+<li><p>Data Type <a class="reference external" href="https://en.wikipedia.org/wiki/Data_type">Wiki</a></p></li>
+<li><p>Data Warehouse <a class="reference external" href="https://en.wikipedia.org/wiki/Data_warehouse">Wiki</a></p></li>
+<li><p>Database <a class="reference external" href="https://en.wikipedia.org/wiki/Database">Wiki</a></p></li>
+<li><p>DBMS Database Management System <a class="reference external" href="https://en.wikipedia.org/wiki/Database#Database_management_system">Wiki</a></p></li>
+<li><p>Database Normalization <a class="reference external" href="https://en.wikipedia.org/wiki/Database_normalization">Wiki</a></p></li>
+<li><p>Database Transaction <a class="reference external" href="https://en.wikipedia.org/wiki/Database_transaction">Wiki</a></p></li>
+<li><p>Enterprise Data Model <a class="reference external" href="https://en.wikipedia.org/wiki/Enterprise_Data_Modeling">Wiki</a></p></li>
+<li><p>ER Entity-Relationship Model <a class="reference external" href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model">Wiki</a></p></li>
+<li><p>ELT Extract, Load, Transform <a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_load,_transform">Wiki</a></p></li>
+<li><p>ETL Extract, Transform, Load <a class="reference external" href="https://en.wikipedia.org/wiki/Extract,_transform,_load">Wiki</a></p></li>
+<li><p>GDB Graph Database <a class="reference external" href="https://en.wikipedia.org/wiki/Graph_database">Wiki</a></p></li>
+<li><p>HDB Heterogeneous Database System <a class="reference external" href="https://en.wikipedia.org/wiki/Heterogeneous_database_system">Wiki</a></p></li>
+<li><p>Hierarchical Database Model <a class="reference external" href="https://en.wikipedia.org/wiki/Hierarchical_database_model">Wiki</a></p></li>
+<li><p>Logical Data Model <a class="reference external" href="https://en.wikipedia.org/wiki/Logical_schema">Wiki</a></p></li>
+<li><p>MUMPS <a class="reference external" href="https://en.wikipedia.org/wiki/MUMPS">Wiki</a></p></li>
+<li><p>NoSQL <a class="reference external" href="https://en.wikipedia.org/wiki/NoSQL">Wiki</a></p></li>
+<li><p>Object Database <a class="reference external" href="https://en.wikipedia.org/wiki/Object_database">Wiki</a></p></li>
+<li><p>OODBMS Object-Oriented Database Management System</p></li>
+<li><p>ORD Object-Relational Database <a class="reference external" href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_database">Wiki</a></p></li>
+<li><p>ORDBMS Object-Relational Database Management System <a class="reference external" href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_database">Wiki</a></p></li>
+<li><p>ORM Object-Relational Mapping <a class="reference external" href="https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping">Wiki</a></p></li>
+<li><p>OLAP Online Analytical Processing <a class="reference external" href="https://en.wikipedia.org/wiki/Online_analytical_processing">Wiki</a></p></li>
+<li><p>OLTP Online Transaction Processing <a class="reference external" href="https://en.wikipedia.org/wiki/Online_transaction_processing">Wiki</a></p></li>
+<li><p>Operational Data Store <a class="reference external" href="https://en.wikipedia.org/wiki/Operational_data_store">Wiki</a></p></li>
+<li><p>Physical Data Model <a class="reference external" href="https://en.wikipedia.org/wiki/Physical_schema">Wiki</a></p></li>
+<li><p>Primary Key <a class="reference external" href="https://en.wikipedia.org/wiki/Primary_key">Wiki</a></p></li>
+<li><p>Query Language <a class="reference external" href="https://en.wikipedia.org/wiki/Query_language">Wiki</a></p></li>
+<li><p>Relation <a class="reference external" href="https://en.wikipedia.org/wiki/Relation_(database)">Wiki</a></p></li>
+<li><p>Relational Algebra <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_algebra">Wiki</a></p></li>
+<li><p>Relational Calculus <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_calculus">Wiki</a></p></li>
+<li><p>Relational Database <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database#RDBMS">Wiki</a></p></li>
+<li><p>Relational Logic <a class="reference external" href="https://en.wikipedia.org/wiki/Charles_Sanders_Peirce#Mathematics_of_logic">Wiki</a></p></li>
+<li><p>Relational Model <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_model">Wiki</a></p></li>
+<li><p>RDBMS Relational Database Management System <a class="reference external" href="https://en.wikipedia.org/wiki/Relational_database#RDBMS">Wiki</a></p></li>
+<li><p>Row <a class="reference external" href="https://en.wikipedia.org/wiki/Row_(database)">Wiki</a></p></li>
+<li><p>Schema <a class="reference external" href="https://en.wikipedia.org/wiki/Database_schema">Wiki</a></p></li>
+<li><p>SQL Structured Query Language <a class="reference external" href="https://en.wikipedia.org/wiki/SQL">Wiki</a></p></li>
+<li><p>Table <a class="reference external" href="https://en.wikipedia.org/wiki/Table_(database)">Wiki</a></p></li>
+<li><p>UML Unified Modeling Language <a class="reference external" href="https://en.wikipedia.org/wiki/Unified_Modeling_Language">Wiki</a></p></li>
+<li><p>Unstructured Data <a class="reference external" href="https://en.wikipedia.org/wiki/Unstructured_data">Wiki</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="dataviz.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">DataViz</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="documentation.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Documentation</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Dave Friedman<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
