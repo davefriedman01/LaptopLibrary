@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Big Data &#8212; Laptop Library</title>
+    <title>Real Estate &#8212; Laptop Library</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -50,11 +50,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/bigdata.html" />
+    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/realestate.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Biology" href="biology.html" />
-    <link rel="prev" title="AWS" href="aws.html" />
+    <link rel="next" title="Retro Gaming" href="retrogaming.html" />
+    <link rel="prev" title="R" href="rlang.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -152,8 +152,8 @@ const thebe_selector_output = ".output, .cell_output"
    AWS
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="bigdata.html">
    Big Data
   </a>
  </li>
@@ -386,8 +386,8 @@ const thebe_selector_output = ".output, .cell_output"
    R
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="realestate.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Real Estate
   </a>
  </li>
@@ -541,7 +541,7 @@ title="Fullscreen mode"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/bigdata.md"
+        <a href="_sources/realestate.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -601,37 +601,18 @@ title="Print to PDF"
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hadoop">
-   Hadoop
+  <a class="reference internal nav-link" href="#resources">
+   Resources
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#macos-homebrew-installation">
-     macOS Homebrew installation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#texts">
-     Texts
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#spark">
-   Spark
+  <a class="reference internal nav-link" href="#figures">
+   Figures
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Texts
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dask">
-   Dask
+  <a class="reference internal nav-link" href="#terms">
+   Terms
   </a>
  </li>
 </ul>
@@ -643,7 +624,7 @@ title="Print to PDF"
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Big Data</h1>
+                <h1>Real Estate</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -654,37 +635,18 @@ title="Print to PDF"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hadoop">
-   Hadoop
+  <a class="reference internal nav-link" href="#resources">
+   Resources
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#macos-homebrew-installation">
-     macOS Homebrew installation
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#texts">
-     Texts
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#spark">
-   Spark
+  <a class="reference internal nav-link" href="#figures">
+   Figures
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id1">
-     Texts
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#dask">
-   Dask
+  <a class="reference internal nav-link" href="#terms">
+   Terms
   </a>
  </li>
 </ul>
@@ -697,87 +659,54 @@ title="Print to PDF"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="big-data">
-<h1>Big Data<a class="headerlink" href="#big-data" title="Permalink to this headline">#</a></h1>
-<section id="hadoop">
-<h2>Hadoop<a class="headerlink" href="#hadoop" title="Permalink to this headline">#</a></h2>
+  <section class="tex2jax_ignore mathjax_ignore" id="real-estate">
+<h1>Real Estate<a class="headerlink" href="#real-estate" title="Permalink to this headline">#</a></h1>
+<section id="resources">
+<h2>Resources<a class="headerlink" href="#resources" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://hadoop.apache.org">Home</a></p></li>
-<li><p><a class="reference external" href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/SingleCluster.html">Setting up a Single-Node Cluster</a></p></li>
-<li><p><a class="reference external" href="https://hadoop.apache.org/docs/stable/hadoop-project-dist/hadoop-common/ClusterSetup.html">Cluster Setup</a></p></li>
-<li><p><a class="reference external" href="https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/WebApplicationProxy.html">Web Application Proxy</a></p></li>
-</ul>
-<section id="macos-homebrew-installation">
-<h3>macOS Homebrew installation<a class="headerlink" href="#macos-homebrew-installation" title="Permalink to this headline">#</a></h3>
-<p>Configuration</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">echo</span> <span class="pre">&quot;HADOOP_HOME=\&quot;/opt/homebrew/Cellar/hadoop/3.3.3/libexec\&quot;&quot;</span> <span class="pre">&gt;&gt;</span> <span class="pre">~/.zshrc</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/etc/hadoop/hadoop-env.sh</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/etc/hadoop/core-site.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/etc/hadoop/hdfs-site.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/etc/hadoop/mapred-site.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/etc/hadoop/yarn-site.xml</span></code></p></li>
-</ul>
-<p>Defaults</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/share/doc/hadoop/hadoop-project-dist/hadoop-common/core-default.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/share/doc/hadoop/hadoop-project-dist/hadoop-hdfs/hdfs-default.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/share/doc/hadoop/hadoop-mapreduce-client/hadoop-mapreduce-client-core/mapred-default.xml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">$HADOOP_HOME/share/doc/hadoop/hadoop-yarn/hadoop-yarn-common/yarn-default.xml</span></code></p></li>
-</ul>
-<p>Startup</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">hdfs</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">namenode</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hdfs</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">secondarynamenode</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hdfs</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">datanode</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">resourcemanager</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">nodemanager</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">yarn</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">proxyserver</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">mapred</span> <span class="pre">--daemon</span> <span class="pre">start</span> <span class="pre">historyserver</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">jps</span></code> Lists the instrumented Java Virtual Machines (JVMs) on the target system. This command is experimental and unsupported.</p></li>
-</ul>
-<p>Monitoring</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">hdfs</span> <span class="pre">dfsadmin</span> <span class="pre">-report</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">hdfs</span> <span class="pre">fsck</span> <span class="pre">/</span></code></p></li>
+<li><p>NAR National Association of Realtors <a class="reference external" href="https://www.nar.realtor">Home</a> <a class="reference external" href="https://en.wikipedia.org/wiki/National_Association_of_Realtors">Wiki</a></p></li>
+<li><p>RESO Real Estate Standards Organization <a class="reference external" href="https://www.reso.org/reso-web-api/">Home</a></p></li>
+<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Index_of_real_estate_articles">Wiki</a></p></li>
 </ul>
 </section>
-<section id="texts">
-<h3>Texts<a class="headerlink" href="#texts" title="Permalink to this headline">#</a></h3>
+<section id="figures">
+<h2>Figures<a class="headerlink" href="#figures" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p>Sammer, Eric. (2012). <em>Hadoop Operations: A Guide for Developers and Administrators</em>. O’Reilly. <a class="reference external" href="http://www.hadoopbook.com">Home</a>. <a class="reference external" href="https://github.com/tomwhite/hadoop-book/">GitHub</a>.</p></li>
-<li><p>White, Tom. (2015). <em>Hadoop: The Definitive Guide: Storage and Analysis at Internet Scale</em>. 4th Ed. O’Reilly.</p></li>
+<li><p>Case, Karl (1946-2016) <a class="reference external" href="https://en.wikipedia.org/wiki/Karl_E._Case">Wiki</a></p></li>
+<li><p>Shiller, Robert <a class="reference external" href="https://en.wikipedia.org/wiki/Robert_J._Shiller">Wiki</a></p></li>
 </ul>
 </section>
-</section>
-<section id="spark">
-<h2>Spark<a class="headerlink" href="#spark" title="Permalink to this headline">#</a></h2>
+<section id="terms">
+<h2>Terms<a class="headerlink" href="#terms" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://spark.apache.org">Home</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Apache_Spark">Wiki</a></p></li>
-</ul>
-<p>Startup</p>
-<ul class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">spark-shell</span> <span class="pre">--master</span> <span class="pre">spark://10.0.4.146:7077</span> <span class="pre">--driver-memory</span> <span class="pre">8g</span> <span class="pre">--executor-memory</span> <span class="pre">6g</span></code></p></li>
-</ul>
-<section id="id1">
-<h3>Texts<a class="headerlink" href="#id1" title="Permalink to this headline">#</a></h3>
-<ul class="simple">
-<li><p>Chambers, Bill &amp; Matei Zaharia. (2018). <em>Spark The Definitive Guide: Big Data Processing Made Simple</em>. O’Reilly. <a class="reference external" href="https://github.com/databricks/Spark-The-Definitive-Guide">GitHub</a>.</p></li>
-<li><p>Damji et al. (2020). <em>Learning Spark: Lightning-Fast Data Analytics</em>. 2nd Ed. O’Reilly. <a class="reference external" href="https://github.com/databricks/LearningSparkV2">GitHub</a>.</p></li>
-<li><p>Karau, Holden &amp; Rachel Warren. (2017). <em>High Performance Spark: Best Practices for Scaling &amp; Optimizing Apache Spark</em>. O’Reilly. <a class="reference external" href="https://github.com/high-performance-spark/high-performance-spark-examples">GitHub</a>.</p></li>
-<li><p>Maas, Gerard &amp; Francois Garillot. (2019). <em>Stream Processing with Apache Spark: Best Practices for Scaling and Optimizing Apache Spark</em>. O’Reilly. <a class="reference external" href="https://github.com/stream-processing-with-spark">GitHub</a>.</p></li>
-<li><p>Parsian, Mahmoud. (2022). <em>Data Algorithms with Spark: Recipes and Design Patterns for Scaling Up Using PySpark</em>. O’Reilly. <a class="reference external" href="https://github.com/mahmoudparsian/data-algorithms-with-spark">GitHub</a>.</p></li>
-<li><p>Polak, Adi. (2023). <em>Machine Learning with Spark: Designing Distributed ML Platforms with PyTorch, TensorFlow, and MLLib</em>. O’Reilly.</p></li>
-<li><p>Ryza et al. (2017). <em>Advanced Analytics with Spark: Patterns for Learning from Data at Scale</em>. 2nd Ed. O’Reilly. <a class="reference external" href="https://github.com/sryza/aas">GitHub</a>.</p></li>
-<li><p>Tandon et al. (2022). <em>Advanced Analytics with PySpark: Patterns for Learning from Data at Scale Using Python and Spark</em>. O’Reilly.</p></li>
-</ul>
-</section>
-</section>
-<section id="dask">
-<h2>Dask<a class="headerlink" href="#dask" title="Permalink to this headline">#</a></h2>
-<ul class="simple">
-<li><p><a class="reference external" href="https://www.dask.org">Home</a></p></li>
+<li><p>Case-Shiller Index <a class="reference external" href="https://en.wikipedia.org/wiki/Case%E2%80%93Shiller_index">Wiki</a></p></li>
+<li><p>HUD Department of Housing and Urban Development <a class="reference external" href="https://en.wikipedia.org/wiki/United_States_Department_of_Housing_and_Urban_Development">Wiki</a></p></li>
+<li><p>Estate <a class="reference external" href="https://en.wikipedia.org/wiki/Estate_(land)">Wiki</a></p></li>
+<li><p>Fannie Mae (FNMA Federal National Mortgage Association) <a class="reference external" href="https://en.wikipedia.org/wiki/Fannie_Mae">Wiki</a></p></li>
+<li><p>Federal Home Loan Bank <a class="reference external" href="https://en.wikipedia.org/wiki/Federal_Home_Loan_Banks">Wiki</a></p></li>
+<li><p>FHA Federal Housing Administration <a class="reference external" href="https://en.wikipedia.org/wiki/Federal_Housing_Administration">Wiki</a></p></li>
+<li><p>FHFA Federal Housing Finance Agency <a class="reference external" href="https://en.wikipedia.org/wiki/Federal_Housing_Finance_Agency">Wiki</a></p></li>
+<li><p>Freddie Mac (FHLMC Federal Home Loan Mortgage Corporation) <a class="reference external" href="https://en.wikipedia.org/wiki/Freddie_Mac">Wiki</a></p></li>
+<li><p>HPI House Price Index <a class="reference external" href="https://en.wikipedia.org/wiki/House_price_index">Wiki</a></p></li>
+<li><p>Housing Bubble <a class="reference external" href="https://en.wikipedia.org/wiki/Housing_bubble">Wiki</a></p></li>
+<li><p>IDX Internet Data Exchange <a class="reference external" href="https://en.wikipedia.org/wiki/Internet_Data_Exchange">Wiki</a></p></li>
+<li><p>ILD Internet Listing Display <a class="reference external" href="https://en.wikipedia.org/wiki/Internet_Listing_Display">Wiki</a></p></li>
+<li><p>Land <a class="reference external" href="https://en.wikipedia.org/wiki/Land">Wiki</a></p></li>
+<li><p>MLS Multiple Listing Service <a class="reference external" href="https://en.wikipedia.org/wiki/Multiple_listing_service">Wiki</a></p></li>
+<li><p>Personal Property <a class="reference external" href="https://en.wikipedia.org/wiki/Personal_property">Wiki</a></p></li>
+<li><p>Property <a class="reference external" href="https://en.wikipedia.org/wiki/Property">Wiki</a></p></li>
+<li><p>Property Valuation <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_appraisal">Wiki</a></p></li>
+<li><p>Real Estate <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate">Wiki</a></p></li>
+<li><p>Real Estate Agent <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_agent">Wiki</a></p></li>
+<li><p>Real Estate Appraisal <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_appraisal">Wiki</a></p></li>
+<li><p>Real Estate Broker <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_agent">Wiki</a></p></li>
+<li><p>Real Estate Economics <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_economics">Wiki</a></p></li>
+<li><p>Real Estate License <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_license">Wiki</a></p></li>
+<li><p>Real Estate Transaction Standard <a class="reference external" href="https://en.wikipedia.org/wiki/Real_Estate_Transaction_Standard">Wiki</a></p></li>
+<li><p>Real Estate Trend <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_trends">Wiki</a></p></li>
+<li><p>Real Property <a class="reference external" href="https://en.wikipedia.org/wiki/Real_property">Wiki</a></p></li>
+<li><p>Realtor <a class="reference external" href="https://en.wikipedia.org/wiki/Real_estate_agent">Wiki</a></p></li>
+<li><p>VOW Virtual Office Website <a class="reference external" href="https://en.wikipedia.org/wiki/Virtual_Office_Website">Wiki</a></p></li>
 </ul>
 </section>
 </section>
@@ -809,17 +738,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="aws.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="rlang.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">AWS</p>
+            <p class="prev-next-title">R</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="biology.html" title="next page">
+    <a class='right-next' id="next-link" href="retrogaming.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Biology</p>
+        <p class="prev-next-title">Retro Gaming</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
