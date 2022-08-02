@@ -6,7 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Documentation &#8212; Laptop Library</title>
+    <title>Ethereum Ecosystem &#8212; Laptop Library</title>
     
   <!-- Loaded before other Sphinx assets -->
   <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
@@ -53,11 +53,11 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/documentation.html" />
+    <link rel="canonical" href="https://davefriedman01.github.io/LaptopLibrary/ethereum.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Elastic Stack" href="elk.html" />
-    <link rel="prev" title="DIY" href="diy.html" />
+    <link rel="next" title="File System 101" href="filesystem101.html" />
+    <link rel="prev" title="Electrical Engineering" href="electricalengineering.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -257,8 +257,8 @@ const thebe_selector_output = ".output, .cell_output"
    DIY
   </a>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="documentation.html">
    Documentation
   </a>
  </li>
@@ -272,8 +272,8 @@ const thebe_selector_output = ".output, .cell_output"
    Electrical Engineering
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="ethereum.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Ethereum Ecosystem
   </a>
  </li>
@@ -560,23 +560,144 @@ title="Fullscreen mode"
   </span>
 
 </button>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
 
     </div>
 </div>
 
 <!-- Table of contents -->
 <div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethereum">
+   Ethereum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solidity">
+   Solidity
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#openzeppelin">
+     OpenZeppelin
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remix">
+     Remix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#truffle-suite">
+     Truffle Suite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web3-py">
+     Web3.py
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web3-js">
+     Web3.js
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other">
+   Other
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#texts">
+   Texts
+  </a>
+ </li>
+</ul>
+
+    </nav>
 </div>
     </div>
     <div class="article row">
         <div class="col pl-md-3 pl-lg-5 content-container">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Documentation</h1>
+                <h1>Ethereum Ecosystem</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethereum">
+   Ethereum
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#solidity">
+   Solidity
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#openzeppelin">
+     OpenZeppelin
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remix">
+     Remix
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#truffle-suite">
+     Truffle Suite
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web3-py">
+     Web3.py
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#web3-js">
+     Web3.js
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#other">
+   Other
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#texts">
+   Texts
+  </a>
+ </li>
+</ul>
+
+                        </nav>
                     </div>
                 </div>
             </div>
@@ -584,72 +705,175 @@ title="Fullscreen mode"
                 
               <div>
                 
-  <section class="tex2jax_ignore mathjax_ignore" id="documentation">
-<h1>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">#</a></h1>
-<p>CommonMark</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="ethereum-ecosystem">
+<h1><a class="toc-backref" href="#id1">Ethereum Ecosystem</a><a class="headerlink" href="#ethereum-ecosystem" title="Permalink to this headline">#</a></h1>
+<div class="important admonition">
+<p class="admonition-title">Last Revised</p>
+<p>1 August 2022</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title">Contents</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://commonmark.org">Home</a></p></li>
-</ul>
-<p>Executable Books Project</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://executablebooks.org/en/latest/">Home</a></p></li>
-<li><p>Books with Jupyter</p>
+<li><p><a class="reference internal" href="#ethereum-ecosystem" id="id1">Ethereum Ecosystem</a></p>
 <ul>
-<li><p><a class="reference external" href="https://jupyterbook.org">Home</a></p></li>
+<li><p><a class="reference internal" href="#ethereum" id="id2">Ethereum</a></p></li>
+<li><p><a class="reference internal" href="#solidity" id="id3">Solidity</a></p>
+<ul>
+<li><p><a class="reference internal" href="#openzeppelin" id="id4">OpenZeppelin</a></p></li>
+<li><p><a class="reference internal" href="#remix" id="id5">Remix</a></p></li>
+<li><p><a class="reference internal" href="#truffle-suite" id="id6">Truffle Suite</a></p></li>
+<li><p><a class="reference internal" href="#web3-py" id="id7">Web3.py</a></p></li>
+<li><p><a class="reference internal" href="#web3-js" id="id8">Web3.js</a></p></li>
 </ul>
 </li>
-<li><p>Book Theme</p>
-<ul>
-<li><p><a class="reference external" href="https://sphinx-book-theme.readthedocs.io/en/latest/index.html">Docs</a></p></li>
-</ul>
-</li>
-<li><p>MyST Markedly Structured Text</p>
-<ul>
-<li><p><a class="reference external" href="https://myst-parser.readthedocs.io">Home</a></p></li>
+<li><p><a class="reference internal" href="#other" id="id9">Other</a></p></li>
+<li><p><a class="reference internal" href="#texts" id="id10">Texts</a></p></li>
 </ul>
 </li>
 </ul>
-<p>KaTeX</p>
+</div>
+<section id="ethereum">
+<h2><a class="toc-backref" href="#id2">Ethereum</a><a class="headerlink" href="#ethereum" title="Permalink to this headline">#</a></h2>
+<p>Ethereum <a class="reference external" href="https://ethereum.org">Home</a></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/KaTeX">Wiki</a></p></li>
+<li><p><a class="reference external" href="https://ethereum.org/en/whitepaper/">Whitepaper</a></p></li>
+<li><p><a class="reference external" href="https://ethereum.github.io/yellowpaper/paper.pdf">Yellow Paper</a></p></li>
+<li><p>Ethereum Enterprise Alliance <a class="reference external" href="https://entethalliance.org">Home</a></p></li>
+<li><p>Ethereum Foundation <a class="reference external" href="https://ethereum.foundation">Home</a></p></li>
 </ul>
-<p>LaTeX</p>
+<p>Ethereum Improvement Proposal <a class="reference external" href="https://eips.ethereum.org/">Home</a></p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.latex-project.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-225">EIP-225: Clique proof-of-authority consensus protocol</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-1462">EIP-1462: Base Security Token</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-1559">EIP-1559: Fee market change for ETH 1.0 chain</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/erc">ERC</a></p>
+<ul>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-20">ERC20</a> <a class="reference external" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-20/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-721">ERC-721</a> <a class="reference external" href="https://ethereum.org/en/developers/docs/standards/tokens/erc-721/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-777">ERC-777</a></p></li>
+<li><p><a class="reference external" href="https://eips.ethereum.org/EIPS/eip-1155">ERC-1155</a></p></li>
 </ul>
-<p>Markdown</p>
+</li>
+</ul>
+<p>Clients</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/Markdown">Wiki</a></p></li>
+<li><p><a class="reference external" href="https://geth.ethereum.org">Go Ethereum</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ledgerwatch/erigon">Erigon</a> (see <a class="reference external" href="https://medium.com/openethereum/gnosis-joins-erigon-formerly-turbo-geth-to-release-next-gen-ethereum-client-c6708dd06dd">this article</a>; formerly <a class="reference external" href="https://openethereum.org">Open Ethereum</a>; formerly the Parity Ethereum client)</p></li>
 </ul>
-<p>MathJax</p>
+<p>Block Explorers</p>
 <ul class="simple">
-<li><p><a class="reference external" href="https://docs.mathjax.org/en/latest/index.html">Docs</a></p></li>
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/MathJax">Wiki</a></p></li>
+<li><p>Etherscan <a class="reference external" href="https://etherscan.io/">Home</a></p></li>
+<li><p>Etherscan <a class="reference external" href="https://etherscan.io/tokens">Token Tracker</a></p></li>
 </ul>
-<p>MathML Mathematical Markup Language</p>
+</section>
+<section id="solidity">
+<h2><a class="toc-backref" href="#id3">Solidity</a><a class="headerlink" href="#solidity" title="Permalink to this headline">#</a></h2>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/MathML">Wiki</a></p></li>
+<li><p><a class="reference external" href="https://soliditylang.org/">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.soliditylang.org/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ethereum/solidity">GitHub</a></p></li>
 </ul>
-<p>Read the Docs</p>
+<section id="openzeppelin">
+<h3><a class="toc-backref" href="#id4">OpenZeppelin</a><a class="headerlink" href="#openzeppelin" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://readthedocs.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://openzeppelin.com">Home</a></p></li>
+<li><p><a class="reference external" href="https://docs.openzeppelin.com/openzeppelin/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://docs.openzeppelin.com/starter-kits/tutorial">Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts">GitHub</a></p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol">ERC721</a></p></li>
+<li><p>Ethernaut <a class="reference external" href="https://ethernaut.openzeppelin.com/">Home</a></p></li>
+<li><p>“The Hitchhiker’s Guide to Smart Contracts in Ethereum” <a class="reference external" href="https://blog.openzeppelin.com/the-hitchhikers-guide-to-smart-contracts-in-ethereum-848f08001f05/">Home</a></p></li>
+<li><p>OpenZeppelin CLI <a class="reference external" href="https://docs.openzeppelin.com/cli/">Docs</a></p></li>
+<li><p>OpenZeppelin Contracts <a class="reference external" href="https://docs.openzeppelin.com/contracts/">Docs</a></p></li>
 </ul>
-<p>reStructuredText</p>
+</li>
+<li><p>Old Contracts</p>
+<ul>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/Crowdsale.sol">Crowdsale</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol">ERC20</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20Detailed.sol">ERC20Detailed</a></p></li>
+<li><p><a class="reference external" href="https://github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/crowdsale/emission/MintedCrowdsale.sol">MintedCrowdsale</a></p></li>
+</ul>
+</li>
+</ul>
+</section>
+<section id="remix">
+<h3><a class="toc-backref" href="#id5">Remix</a><a class="headerlink" href="#remix" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://docutils.sourceforge.io/rst.html">Home</a></p></li>
+<li><p><a class="reference external" href="https://remix.ethereum.org/">Home</a></p></li>
+<li><p><a class="reference external" href="https://remix-ide.readthedocs.io">Docs</a></p></li>
 </ul>
-<p>Sphinx</p>
+</section>
+<section id="truffle-suite">
+<h3><a class="toc-backref" href="#id6">Truffle Suite</a><a class="headerlink" href="#truffle-suite" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://www.sphinx-doc.org">Home</a></p></li>
+<li><p><a class="reference external" href="https://www.trufflesuite.com">Home</a></p></li>
+<li><p><a class="reference external" href="https://trufflesuite.com/tutorial/">Tutorial</a></p></li>
+<li><p><a class="reference external" href="https://www.trufflesuite.com/docs/truffle/getting-started/truffle-with-metamask">Truffle and MetaMask</a></p></li>
+<li><p><a class="reference external" href="https://www.trufflesuite.com/docs/ganache/overview">Ganache</a></p></li>
+<li><p><a class="reference external" href="https://github.com/trufflesuite/ganache-cli">ganache-cli</a></p></li>
 </ul>
-<p>Sphinx Design</p>
+</section>
+<section id="web3-py">
+<h3><a class="reference external" href="http://Web3.py">Web3.py</a><a class="headerlink" href="#web3-py" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://sphinx-design.readthedocs.io/en/latest/index.html">Docs</a></p></li>
+<li><p><a class="reference external" href="https://web3py.readthedocs.io/">Docs</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ethereum/web3.py">GitHub</a></p></li>
 </ul>
-<p>TeX</p>
+</section>
+<section id="web3-js">
+<h3><a class="toc-backref" href="#id8">Web3.js</a><a class="headerlink" href="#web3-js" title="Permalink to this headline">#</a></h3>
 <ul class="simple">
-<li><p><a class="reference external" href="https://en.wikipedia.org/wiki/TeX">Wiki</a></p></li>
+<li><p><a class="reference external" href="https://web3js.readthedocs.io">Docs</a></p></li>
 </ul>
+</section>
+</section>
+<section id="other">
+<h2><a class="toc-backref" href="#id9">Other</a><a class="headerlink" href="#other" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>IPFS InterPlanetary File System <a class="reference external" href="https://ipfs.io/">Home</a> <a class="reference external" href="https://en.wikipedia.org/wiki/InterPlanetary_File_System">Wiki</a></p>
+<ul>
+<li><p>IPFS Companion <a class="reference external" href="https://github.com/ipfs/ipfs-companion">GitHub</a></p></li>
+</ul>
+</li>
+<li><p>Pinata <a class="reference external" href="https://pinata.cloud/pinmanager">Home</a></p>
+<ul>
+<li><p><a class="reference external" href="https://cid.ipfs.io/">CID Inspector</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference external" href="https://swcregistry.io">SWC Smart Contract Weakness Classification</a></p></li>
+<li><p>Eth Gas Station <a class="reference external" href="https://ethgasstation.info/index.php">Home</a></p></li>
+<li><p><a class="reference external" href="https://cryptozombies.io">Cryptozombies</a></p></li>
+<li><p>Consensys <a class="reference external" href="https://consensys.net/">Home</a></p>
+<ul>
+<li><p><a class="reference external" href="https://consensys.github.io/smart-contract-best-practices/">Ethereum Smart Contract Best Practices</a></p></li>
+</ul>
+</li>
+<li><p>CryptoKitties <a class="reference external" href="https://www.cryptokitties.co">Home</a></p></li>
+<li><p>ENS Ethereum Name Service <a class="reference external" href="https://ens.domains/">Home</a> <a class="reference external" href="https://docs.ens.domains/">Docs</a></p></li>
+<li><p>Infura <a class="reference external" href="https://infura.io/">Home</a></p></li>
+<li><p>MyCrypto <a class="reference external" href="https://app.mycrypto.com/">Home</a></p></li>
+</ul>
+<p>Layer 2</p>
+<ul class="simple">
+<li><p>Arbitrum <a class="reference external" href="https://arbitrum.io/">Home</a></p></li>
+<li><p>Optimism <a class="reference external" href="https://optimism.io/">Home</a></p></li>
+<li><p>Polygon <a class="reference external" href="https://polygon.technology/">Home</a> <a class="reference external" href="https://github.com/maticnetwork">GitHub</a></p></li>
+</ul>
+</section>
+<section id="texts">
+<h2><a class="toc-backref" href="#id10">Texts</a><a class="headerlink" href="#texts" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Antonopoulos, Andreas M. &amp; Gavin Wood. (2018). <a class="reference external" href="https://github.com/ethereumbook/ethereumbook.git"><em>Mastering Ethereum: Building Smart Contracts and DApps</em></a>. O’Reilly.</p></li>
+<li><p>Buterin, Vitalik. (2016). <a class="reference external" href="https://eips.ethereum.org/EIPS/eip-155">“EIP-155: Simple replay attack protection”</a>.</p></li>
+<li><p>Buterin, Vitalik. (2013). <a class="reference external" href="https://ethereum.org/whitepaper/">“Ethereum White Paper”</a>.</p></li>
+<li><p>Infante, Roberto. (2019). <em>Building Ethereum Dapps</em>. Manning.</p></li>
+<li><p>Johnston, David et al. <a class="reference external" href="https://github.com/DavidJohnstonCEO/DecentralizedApplications"><em>The General Theory of Decentralized Applications, Dapps</em></a>.</p></li>
+<li><p>Solorio, Kevin, Randall Kanna, &amp; David H. Hoover. (2019). <em>Hands-On Smart Contract Development with Solidity and Ethereum: From Fundamentals to Deployment</em>. O’Reilly.</p></li>
+<li><p>Wood, Gavin. <a class="reference external" href="https://ethereum.github.io/yellowpaper/paper.pdf"><em>Ethereum: A Secure Decentralized Generalized Transaction Ledger</em></a>.</p></li>
+</ul>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -679,17 +903,17 @@ title="Fullscreen mode"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="diy.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="electricalengineering.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">DIY</p>
+            <p class="prev-next-title">Electrical Engineering</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="elk.html" title="next page">
+    <a class='right-next' id="next-link" href="filesystem101.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Elastic Stack</p>
+        <p class="prev-next-title">File System 101</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
